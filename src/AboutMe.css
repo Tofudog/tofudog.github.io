@@ -1,0 +1,23 @@
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+  }
+
+h2 {
+    font-size: 1.3 rem;
+    color: #333;
+    text-align: center;
+  }
+  
+p {
+    font-size: 1.1rem;
+    color: #615e5e;
+    text-align: center;
+  }
+
+.inline-block-child {
+    display: inline-block;
+    margin-right: 90px;
+  }
