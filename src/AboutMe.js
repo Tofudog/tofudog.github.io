@@ -24,10 +24,10 @@ function AboutMe() {
                     Howdy! My name is Leonardo de Farias and I'm
                 </p>
                 <p>
-                    a 2nd yr CS student at Emory University
+                    a 2nd yr CS student at Emory University.
                 </p>
                 <p>
-                    I like eating food, playing chess, and walking around.
+                    I enjoy traveling, walking my dog, and playing video games.
                 </p>
             </div>
         </div>

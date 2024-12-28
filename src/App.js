@@ -1,9 +1,9 @@
-import Home from './Home.js'
+import MyHome from './MyHome.js'
 
 function App() {
   return (
     <>
-      <Home></Home>
+      <MyHome></MyHome>
     </>
   );
 }
