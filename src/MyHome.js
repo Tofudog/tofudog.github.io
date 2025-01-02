@@ -1,6 +1,7 @@
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Title from "./Title";
+import Ask from "./Ask";
 import './MyHome.css'
 
 function MyHome() {
@@ -14,6 +15,9 @@ function MyHome() {
             </div>
             <div class="section">
                 <Projects></Projects>
+            </div>
+            <div class="section">
+                <Ask></Ask>
             </div>
             <div id="bottom-space"></div>
         </div>
