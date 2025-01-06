@@ -20,6 +20,7 @@ function MyHome() {
                 <Ask></Ask>
             </div>
             <div id="bottom-space"></div>
+
         </div>
     );
 }
