@@ -7,21 +7,25 @@ function Projects() {
             <div class="inline-block-child">
                 <ul>
                     <li>
-                        <a href="https://github.com/Tofudog/HiraganaQuiz">HiraganaQuiz</a> (follow instructions)
+                        <a href="https://github.com/Tofudog/HiraganaQuiz">
+                        HiraganaQuiz
+                        </a> <p>(follow instructions)</p>
                     </li>
                     <li>
-                        <a href="https://github.com/Tofudog/MemeForum">MemeForum</a> (unfinished)
+                        <a href="https://github.com/Tofudog/MemeForum">MemeForum</a>
+                        <p>(unfinished)</p>
                     </li>
                 </ul>
+                <br></br> <br></br> <br></br>
             </div>
-            <div class="inline-block-child">
+            <div class="inline-block-child-right-side">
                 <div>
                     <h2>
                         Projects
                     </h2>
                 </div>
                 <div>
-                    <img src={logo} width={150} height={150}/>
+                    <img src={logo} width={220} height={220}/>
                 </div>
             </div>
         </div>

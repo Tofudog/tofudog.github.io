@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: rgb(3, 0, 16);
+}
+
+h1 {
+  color: green;
+}
+
+h2 {
+  color: green;
+}
+
+h3 {
+  color: green;
+}
+
+h4 {
+  color: green;
+}
+
+p {
+  color:green
+}
+
+

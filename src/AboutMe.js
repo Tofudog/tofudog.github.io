@@ -15,20 +15,21 @@ function AboutMe() {
                 </div>
                 <div>
                     {/*Where image goes*/}
-                    <img src={logo} width={150} height={150}/>
+                    <img src={logo} width={220} height={220}/>
                 </div>
             </div>
-            <div class="inline-block-child">
+            <div class="inline-block-child-right-side">
                 {/*Where description goes*/}
-                <p>
+                <h4>
                     Howdy! My name is Leonardo de Farias and I'm
-                </p>
-                <p>
+                </h4>
+                <h4>
                     a 2nd yr CS student at Emory University.
-                </p>
-                <p>
+                </h4>
+                <h4>
                     I enjoy traveling, walking my dog, and playing video games.
-                </p>
+                </h4>
+                <br></br> <br></br> <br></br>
             </div>
         </div>
     );
