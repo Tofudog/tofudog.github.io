@@ -25,7 +25,7 @@ function Projects() {
                     </h2>
                 </div>
                 <div>
-                    <img src={logo} width={220} height={220}/>
+                    <img src={logo} width={220} height={220} alt='meme'/>
                 </div>
             </div>
         </div>

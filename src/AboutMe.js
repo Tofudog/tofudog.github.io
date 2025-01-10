@@ -15,7 +15,7 @@ function AboutMe() {
                 </div>
                 <div>
                     {/*Where image goes*/}
-                    <img src={logo} width={220} height={220}/>
+                    <img src={logo} width={220} height={220} alt='Me'/>
                 </div>
             </div>
             <div class="inline-block-child-right-side">

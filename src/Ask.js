@@ -8,7 +8,7 @@ function Ask() {
         <>
             <div class="inline-block-child">
                 <h2>Ask me Anything!</h2>
-                <img src={logo} width={220} height={220}/>
+                <img src={logo} width={220} height={220} alt='Ness'/>
                 <br></br> <br></br>
             </div>
             <div class="inline-block-child-right-side">
