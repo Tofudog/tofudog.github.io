@@ -8,22 +8,31 @@ h2 {
     font-size: 1.8rem;
     text-align: center;
   }
-
-h4 {
-  text-align: center;
-}
   
+h4 {
+  line-height: 30px;
+}
+
 p {
     font-size: 0.9rem;
     text-align: center;
   }
 
+.about-me-container {
+  display: flex;
+  align-items: center; /* Vertically aligns items */
+  justify-content: space-between; /* Ensures spacing between the image and text */
+  gap: 20px; /* Adds space between the two sections */
+  padding: 20px;
+}
+
 .inline-block-child {
-    display: inline-block;
-    margin-right: 1px;
+  flex: 0 0 auto; /* Ensure the left section doesn't stretch */
+  text-align: left; /* Center-align the text and image inside */
   }
 
 .inline-block-child-right-side {
-  display: inline-block;
-  margin-left: 150px;
+  flex: 1; /* Allow the right section to take up remaining space */
+  text-align: left;
+  margin-left: 20px; /* Additional spacing if needed */
 }

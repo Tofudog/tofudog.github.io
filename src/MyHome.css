@@ -6,3 +6,10 @@
 #bottom-space {
     padding-bottom: 100px;
 }
+
+.top_part {
+    position: fixed;
+    background-color: rgb(157, 72, 3);
+    width: 100%;
+    opacity: 90%;
+}
