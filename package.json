@@ -10,7 +10,7 @@
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1"
   },
-  "homepage": "https://tofudog.github.io/personal_website",
+  "homepage": "https://Tofudog.github.io/personal_website",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
