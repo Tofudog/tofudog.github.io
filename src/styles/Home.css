@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: #59FF00;
+}
+
+h2 {
+    color: #59FF00;
+}
+
+h3 {
+    color: #59FF00;
+}
+
+h4 {
+    color: #369B00;
+}
+
+h5 {
+    color: #59FF00;
+}
+
+.vertical-section {
+    margin-left: 5%;
+}
+
+.darker-color {
+    color: #369B00;
+}
+
+#container-sections {
+    float: left;
+}
+
+#section1 {
+    float: left;
+    width: 35%;
+}
+
+#section2 {
+    float: left;
+    margin-left: 10%;
+    width: 45%;
+}
+
+#section3 {
+    margin-left: 3%;
+}
+
+img {
+    width: 100%;
+}
+
