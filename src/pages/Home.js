@@ -7,15 +7,15 @@ function Home() {
     const section = output01();
     return <>
         <div class="vertical-section">
-            <div>
-                <div id="section2">
+            <div class="my-container">
+                <AboutMe></AboutMe>
+                <div id="my-section2">
                     <h2 class="darker-color">{section}</h2>
                 </div>
-                <div id="section3">
+                <div id="my-section3">
                     <CommandLine></CommandLine>
                 </div>
             </div>
-            <AboutMe></AboutMe>
         </div>
     </>
 }

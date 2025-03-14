@@ -1,7 +1,12 @@
+import {Link} from 'react-router-dom'
+
 function CommandLine() {
     return <>
-        <h2>123</h2>
-        <br></br><br></br><br></br>
+        <h4>
+            Command Documentation:
+            &nbsp;
+            <Link to="/documentation">here</Link>
+        </h4>
     </>
 }
 

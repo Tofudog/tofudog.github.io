@@ -6,6 +6,7 @@ import github_logo from "./../assets/images/github_logo.jpeg";
 import linkedin_logo from "./../assets/images/linkedin_logo.png";
 import leetcode_logo from "./../assets/images/leetcode_logo.png";
 import codeforces_logo from "./../assets/images/codeforces_logo.png";
+import chess_logo from "./../assets/images/chess_logo.png";
 
 function AboutMe() {
     return <>
@@ -16,8 +17,13 @@ function AboutMe() {
                 <h1>Leonardo de Farias</h1>
                 <h2>CS Student @Emory</h2>
                 <h3>I am studying to be a software engineer, developing cool projects along the way</h3>
-                <img src={logo} />
+                {/* <img src={logo} /> */}
                 <br></br><br></br>
+                <div>
+                    <br></br><br></br><br></br><br></br>
+                    <ContactMe></ContactMe>
+                    <br></br><br></br>
+                </div>
                 <div class="flex-container">
                     <div class="flex-item">
                         <a href="https://github.com/Tofudog" target="_blank">
@@ -39,10 +45,11 @@ function AboutMe() {
                             <img src={codeforces_logo} />
                         </a>
                     </div>
-                </div>
-                <div>
-                    <br></br>
-                    <ContactMe></ContactMe>
+                    <div class="flex-item">
+                        <a href="https://www.chess.com/member/leonardodefarias25" target="_blank">
+                            <img src={chess_logo} />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
