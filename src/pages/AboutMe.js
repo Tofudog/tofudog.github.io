@@ -1,18 +1,49 @@
-import output01 from "./../scripts/generate01s";
-import logo from "./../assets/images/pikachu.png"
+import NavBar from "./NavBar.js";
+import ContactMe from "./ContactMe.js";
+
+import logo from "./../assets/images/pikachu.png";
+import github_logo from "./../assets/images/github_logo.jpeg";
+import linkedin_logo from "./../assets/images/linkedin_logo.png";
+import leetcode_logo from "./../assets/images/leetcode_logo.png";
+import codeforces_logo from "./../assets/images/codeforces_logo.png";
 
 function AboutMe() {
-    const section = output01();
     return <>
         <div class="container-sections">
             <div id="section1">
+                <NavBar></NavBar>
+                <br></br>
                 <h1>Leonardo de Farias</h1>
                 <h2>CS Student @Emory</h2>
                 <h3>I am studying to be a software engineer, developing cool projects along the way</h3>
                 <img src={logo} />
-            </div>
-            <div id="section2">
-                <h2 class="darker-color">{section}</h2>
+                <br></br><br></br>
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <a href="https://github.com/Tofudog" target="_blank">
+                            <img class="circular-img" src={github_logo} />
+                        </a>
+                    </div>                    
+                    <div class="flex-item">
+                        <a href="https://www.linkedin.com/in/leonardo-de-farias-857167222/" target="_blank">
+                            <img class="circular-img" src={linkedin_logo} />
+                        </a>
+                    </div>
+                    <div class="flex-item">
+                        <a href="https://leetcode.com/u/Tofudog25/" target="_blank">
+                            <img class="circular-img" src={leetcode_logo} />
+                        </a>
+                    </div>                    
+                    <div class="flex-item">
+                        <a href="https://codeforces.com/profile/defarias25" target="_blank">
+                            <img src={codeforces_logo} />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <br></br>
+                    <ContactMe></ContactMe>
+                </div>
             </div>
         </div>
     </>

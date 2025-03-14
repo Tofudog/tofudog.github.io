@@ -1,11 +1,20 @@
 import "./../styles/Home.css"
-import NavBar from "./NavBar.js";
 import AboutMe from "./AboutMe.js";
+import CommandLine from "./CommandLine.js";
+import output01 from "../scripts/generate01s.js";
 
 function Home() {
+    const section = output01();
     return <>
         <div class="vertical-section">
-            <NavBar></NavBar>
+            <div>
+                <div id="section2">
+                    <h2 class="darker-color">{section}</h2>
+                </div>
+                <div id="section3">
+                    <CommandLine></CommandLine>
+                </div>
+            </div>
             <AboutMe></AboutMe>
         </div>
     </>
