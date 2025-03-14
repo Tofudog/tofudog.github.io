@@ -37,19 +37,41 @@ h5 {
 #section1 {
     float: left;
     width: 35%;
+    position: fixed;
 }
 
 #section2 {
-    float: left;
-    margin-left: 10%;
+    float: right;
+    margin-right: 15%;
     width: 45%;
 }
 
 #section3 {
-    margin-left: 3%;
+    float: right;
+    margin-right: 40%;
 }
 
 img {
-    width: 100%;
+    width: 35%;
 }
 
+.circular-img {
+    border-radius: 50%;
+}
+
+.flex-container {
+    display: flex;
+    margin: 0 -5px;
+    gap: 0px
+}
+
+.flex-item {
+    width: 20%;
+    margin-right: -10%;
+}
+
+
+.mock-command-line {
+    border-color: black;
+    border-width: 0px;
+}

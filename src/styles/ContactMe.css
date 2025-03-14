@@ -1,0 +1,31 @@
+input {
+    width: 40%;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border-color: #369B00;
+    border-width: 3px;
+    color:#369B00;
+}
+
+.flex-container-contact {
+    display: flex;
+    gap: 10%;
+}
+
+#message-item {
+    width: 90%;
+    height: 40px;
+    margin-top: 4%;
+    border-width: 5px;
+}
+
+#send-message-button {
+    background-color: rgb(0, 0, 0);
+    border-color: #369B00;
+    border-width: 3px;
+    color:#369B00;
+    width: 91%;
+    height: 30px;
+    margin-top: 5%;
+}
+
