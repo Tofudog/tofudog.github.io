@@ -6,6 +6,7 @@ function NavBar() {
             ldefari@Leonardos-Laptop personal_website % alright npm deploy i guess :(
             <br></br>
             hacker123@your-computer %
+            <input class="mock-command-line"></input>
         </h5>
     </>
 }
