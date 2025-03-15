@@ -1,6 +1,10 @@
 import {Link} from 'react-router-dom'
-import { useState } from 'react';
+import React from 'react';
+import { useState, useEffect } from 'react';
+import ReactDOM from "react-dom/client";
 import runCommand from '../scripts/commands.js';
+import { COMMAND_LIST } from '../constants.js';
+import TestComponent from '../components/TestComponent.js';
 
 function CommandLine() {
     const [inputValue, setInputValue] = useState('');
@@ -16,7 +20,18 @@ function CommandLine() {
     };
   
     const handleFormSubmit = (value) => {
-        document.getElementById("bruh").innerHTML = `<h2>${value}</h2>`;
+        //check if input command is valid
+        let cmdElement = document.getElementById("rendered-output");
+        if (COMMAND_LIST.includes(value)) {
+            const targetDiv = document.getElementById("command-line-output");
+            if (targetDiv) {
+                const root = ReactDOM.createRoot(targetDiv);
+                root.render(<TestComponent />);
+            }
+        }
+        else {
+            cmdElement.innerHTML = `<h4 style="color:tomato;">zsh: command not found: ${value}</h4>`;
+        }
     };
 
     return <>
@@ -39,8 +54,10 @@ function CommandLine() {
                         <input onChange={handleChange} class="mock-command-line"></input>
                     </form>
                 </h4>
-                <h4 id="bruh"></h4>
             </div>
+        </div>
+        <div id="command-line-output">
+            <h4 id="rendered-output"></h4>
         </div>
     </>
 }
