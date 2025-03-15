@@ -39,13 +39,17 @@ a {
     color: #369B00;
 }
 
+.white-text {
+    color: white;
+}
+
 .circular-img {
     border-radius: 50%;
 }
 
 .flex-container {
     display: flex;
-    margin: 0 -5px;
+    margin: 0 2px;
     gap: 0px
 }
 
@@ -58,11 +62,16 @@ a {
 .mock-command-line {
     border-color: black;
     border-width: 0px;
+    size: 20%;
 }
 
 .my-container {
     float: left;
     width: 100%;
+}
+
+.command {
+    margin-bottom: 10%;
 }
 
 #section1 {
@@ -80,4 +89,18 @@ a {
 #my-section3 {
     float: left;
     width: 20%;
+}
+
+#documentation-layout {
+    margin-left: 5%;
+    margin-right: 25%;
+}
+
+#flex-container-cmd {
+    display: flex;
+}
+
+#flex-item-cmd {
+    float: left;
+    margin-left: 2%;
 }
