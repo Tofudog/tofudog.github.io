@@ -3,8 +3,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import ReactDOM from "react-dom/client";
 import runCommand from '../scripts/commands.js';
-import { COMMAND_LIST } from '../constants.js';
-import {TestComponent, ProjectComponent} from '../components/TestComponent.js';
+import { COMMAND_MAP } from '../constants.js';
 
 function CommandLine() {
     const [inputValue, setInputValue] = useState('');
@@ -22,16 +21,19 @@ function CommandLine() {
     const handleFormSubmit = (value) => {
         //check if input command is valid
         let cmdElement = document.getElementById("rendered-output");
-        if (COMMAND_LIST.includes(value)) {
+        if (COMMAND_MAP.has(value)) {
             const targetDiv = document.getElementById("command-line-output");
             if (targetDiv) {
                 const root = ReactDOM.createRoot(targetDiv);
-                root.render(<ProjectComponent></ProjectComponent>);
+                //root.render(<ProjectComponent></ProjectComponent>);
+                const cmdComponent = COMMAND_MAP.get(value);
+                root.render(cmdComponent);
             }
         }
         else {
             cmdElement.innerHTML = `<h4 style="color:tomato;">zsh: command not found: ${value}</h4>`;
         }
+        document.getElementById("mock-command-line-id").value = "";
     };
 
     return <>
@@ -51,7 +53,7 @@ function CommandLine() {
             <div id="flex-item-cmd">
                 <h4>
                     <form onSubmit={handleSubmit} id="command-form" >
-                        <input onChange={handleChange} class="mock-command-line"></input>
+                        <input onChange={handleChange} class="mock-command-line" id="mock-command-line-id"></input>
                     </form>
                 </h4>
             </div>

@@ -3,8 +3,6 @@ import github_logo from "../assets/images/github_logo.jpeg";
 
 import jsonData from '../data/projects.json';
 
-const loadData = () => JSON.parse(JSON.stringify(jsonData));
-
 function ProjectOutline(projectLink, projectImage, numStars, title, description) {
     return <>
         <div class="box">
@@ -17,7 +15,7 @@ function ProjectOutline(projectLink, projectImage, numStars, title, description)
                 </div>
                 <div>
                     {/* Later do Github and/or Chrome Store api request*/}
-                    <h4 class="project-text">Number of likes: {numStars}</h4>
+                    <h5 class="project-text">Number of likes: {numStars}</h5>
                 </div>
             </div>
             <div>
@@ -33,13 +31,36 @@ function ProjectOutline(projectLink, projectImage, numStars, title, description)
 }
 
 function ProjectComponent() {
-    //make projects.json
-    const description = "Chrome extension where Leetcode users battle against each other!";
-    return ProjectOutline("https://github.com/Tofudog/Yeetcode", github_logo, 12, "Yeetcode", description);
+    const projectSize = jsonData.Projects.length;
+    let componentList = [];
+    for (var i=0; i<projectSize; i++) {
+        const curProject = jsonData.Projects[i];
+        const projectLink = curProject.projectLink;
+        const projectImageLink = curProject.projectImageLink;
+        const numStars = curProject.numStars;
+        const title = curProject.title;
+        const description = curProject.description;
+        componentList.push(ProjectOutline(projectLink, projectImageLink, numStars, title, description));
+    }
+    return (
+        <div>
+            {componentList.map((item) => (
+                <div>{item}</div>
+            ))}
+        </div>
+      );
 }
 
-function TestComponent(selectedComponent) {
-    return selectedComponent;
+function ClearScreenComponent() {
+    return <></>
 }
 
-export {TestComponent, ProjectComponent};
+function TestComponent() {
+    return <>
+        <h2>
+            I cleared the screen!
+        </h2>
+    </>
+}
+
+export {TestComponent, ProjectComponent, ClearScreenComponent};

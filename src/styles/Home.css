@@ -1,21 +1,26 @@
 h1 {
     color: #59FF00;
+    font-size: 3vw;
 }
 
 h2 {
     color: #59FF00;
+    font-size: 2vw;
 }
 
 h3 {
     color: #59FF00;
+    font-size: 1.5vw;
 }
 
 h4 {
     color: #369B00;
+    font-size: 1.2vw;
 }
 
 h5 {
     color: #59FF00;
+    font-size: 1.1vw;
 }
 
 body {
