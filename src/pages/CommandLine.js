@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import ReactDOM from "react-dom/client";
 import runCommand from '../scripts/commands.js';
 import { COMMAND_LIST } from '../constants.js';
-import TestComponent from '../components/TestComponent.js';
+import {TestComponent, ProjectComponent} from '../components/TestComponent.js';
 
 function CommandLine() {
     const [inputValue, setInputValue] = useState('');
@@ -26,7 +26,7 @@ function CommandLine() {
             const targetDiv = document.getElementById("command-line-output");
             if (targetDiv) {
                 const root = ReactDOM.createRoot(targetDiv);
-                root.render(<TestComponent />);
+                root.render(<ProjectComponent></ProjectComponent>);
             }
         }
         else {
