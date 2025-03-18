@@ -1,0 +1,18 @@
+{
+    "Projects": [
+        {
+            "projectLink": "https://github.com/Tofudog/Yeetcode",
+            "projectImageLink": "../assets/images/github_logo.jpeg",
+            "numStars": 4,
+            "title": "Yeetcode",
+            "description": "Chrome extension where Leetcode users battle against each other!"
+        },
+        {
+            "projectLink": "https://github.com/Tofudog/Yeetcode",
+            "projectImageLink": "../assets/images/github_logo.jpeg",
+            "numStars": 4,
+            "title": "Yeetcode",
+            "description": "Chrome extension where Leetcode users battle against each other!"
+        }
+    ]
+}

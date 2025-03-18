@@ -1,6 +1,10 @@
 import "../styles/Project.css";
 import github_logo from "../assets/images/github_logo.jpeg";
 
+import jsonData from '../data/projects.json';
+
+const loadData = () => JSON.parse(JSON.stringify(jsonData));
+
 function ProjectOutline(projectLink, projectImage, numStars, title, description) {
     return <>
         <div class="box">
@@ -8,22 +12,20 @@ function ProjectOutline(projectLink, projectImage, numStars, title, description)
                 <div>
                 <a href={projectLink} target="_blank">
                     {/* Obviously change this logo to be project image */}
-                    <img src={projectImage} />
+                    <img class="project-image" src={projectImage} />
                 </a>
                 </div>
                 <div>
                     {/* Later do Github and/or Chrome Store api request*/}
-                    <h4>Number of likes: {numStars}</h4>
+                    <h4 class="project-text">Number of likes: {numStars}</h4>
                 </div>
             </div>
             <div>
                 <div>
-                    <h4>{title}</h4>
+                    <h4 class="project-text">{title}</h4>
                 </div>
                 <div>
-                    <h5>
-                        {description}
-                    </h5>
+                    <h5 class="project-text">{description}</h5>
                 </div>
             </div>
         </div>
