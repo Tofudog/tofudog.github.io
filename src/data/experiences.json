@@ -1,0 +1,18 @@
+{
+    "Experiences": [
+        {
+            "company": "Amazon",
+            "location": "Seattle, WA",
+            "position": "SDE Intern",
+            "what-i-did": "Incorporated multimodal LLM into an internal platform",
+            "tech": ["AWS", "Python", "Git/Github", "LLMs", "Regular Expressions"]
+        },
+        {
+            "company": "Oteemo",
+            "location": "remote",
+            "position": "AI Intern",
+            "what-i-did": "Contributed to research for matching guns with bullets using computer vision",
+            "tech": ["Tensorflow", "Google Colab"]
+        }
+    ]
+}
