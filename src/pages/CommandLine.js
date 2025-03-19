@@ -20,6 +20,9 @@ function CommandLine() {
   
     const handleFormSubmit = (value) => {
         //check if input command is valid
+        if (value === null || value === undefined) {
+            value = "";
+        }
         let cmdElement = document.getElementById("rendered-output");
         if (COMMAND_MAP.has(value)) {
             const targetDiv = document.getElementById("command-line-output");
