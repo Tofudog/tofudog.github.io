@@ -1,5 +1,6 @@
 import NavBar from "./NavBar.js";
 import ContactMe from "./ContactMe.js";
+import ChangingTextColor from "./ColorPallete.js";
 
 import logo from "./../assets/images/pikachu.png";
 import github_logo from "./../assets/images/github_logo.jpeg";
@@ -14,13 +15,13 @@ function AboutMe() {
             <div id="section1">
                 <NavBar></NavBar>
                 <br></br>
-                <h1>Leonardo de Farias</h1>
+                <ChangingTextColor component="h1" text="Leonardo de Farias"></ChangingTextColor>
                 <h2>CS Student @Emory</h2>
                 <h3>I am studying to be a software engineer, developing cool projects along the way</h3>
                 {/* <img src={logo} /> */}
                 <br></br><br></br>
                 <div>
-                    <br></br><br></br><br></br><br></br>
+                    <br></br>
                     <ContactMe></ContactMe>
                     <br></br><br></br>
                 </div>
