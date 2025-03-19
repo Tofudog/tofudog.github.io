@@ -26,48 +26,60 @@ function colorTupleToString(colorTuple) {
     return colorString;
 }
 
-function nextColor(color) {
+function nextColor(color, decreasing) {
     let colorTuple = getColorTuple(color);
-    let increaseChoice = Math.floor(Math.random() * 2);
-    let rgbChoice = Math.floor(Math.random() * 3);
-    if (increaseChoice === 0) {
-        //don't increase unless necessary
-        if (colorTuple[rgbChoice] === "0") {
-            colorTuple[rgbChoice] = "1";
-        }
-        else {
-            colorTuple[rgbChoice] = (parseInt(colorTuple[rgbChoice]) - 9).toString();
-        }
+    let rgbChoice = Math.floor(Math.random() * 2);
+    let hueValue = parseInt(colorTuple[rgbChoice]);
+    if (decreasing) {
+        if (hueValue === 0) {++hueValue;}
+        else {--hueValue;}
     }
     else {
-        if (colorTuple[rgbChoice] === "255") {
-            colorTuple[rgbChoice] = "254";
-        }
-        else {
-            colorTuple[rgbChoice] = (parseInt(colorTuple[rgbChoice]) + 9).toString();
-        }
+        if (hueValue === 255) {--hueValue;}
+        else {++hueValue};
     }
+    colorTuple[rgbChoice] = hueValue.toString();
     return colorTupleToString(colorTuple);
 }
 
+function isSmallerColor(color, otherColor) {
+    /*
+    Helper function to determine whether pallete is now decreasing.
+    Returns: ---> true if color < otherColor (i.e. darker)
+             ---> false otherwise
+    */
+    let colorTuple = getColorTuple(color);
+    let otherColorTuple = getColorTuple(otherColor);
+    for (var i=0; i<3; i++) {
+        if (parseInt(colorTuple[i]) < parseInt(otherColorTuple[i])) {
+            return true;
+        }
+    }
+    return false;
+}
+
 function ChangingTextColor(props) {
-    const [textColor, setTextColor] = useState("rgb(94, 255, 0)");
+    const [textColor, setTextColor] = useState("rgb(0, 255, 60)");
     const [decreasing, setDecreasing] = useState(true);
 
     useEffect(() => {
         const intervalId = setInterval(async () => {
-            const randomColor = await nextColor(textColor);
+            const randomColor = await nextColor(textColor, decreasing);
+            if (isSmallerColor(randomColor, textColor)) {
+                setDecreasing(true);
+            }
+            else {setDecreasing(false);}
             setTextColor(randomColor);
-        }, 8);
+        }, 7);
         return () => clearInterval(intervalId);
-    }, [textColor]);
+    }, [textColor, decreasing]);
 
     return (
-        <div style={{ color: textColor }}>
-            <props.component>
+        <props.component id="no-starter-color">
+            <div style={{ color: textColor }}>
                 {props.text.toString()}
-            </props.component>
-        </div>
+            </div>
+        </props.component>
     );
 }
 

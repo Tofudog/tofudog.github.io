@@ -1,5 +1,5 @@
 h1 {
-    /* color: #59FF00; */
+    color: #59FF00;
     font-size: 3vw;
 }
 
@@ -109,4 +109,8 @@ a {
 #flex-item-cmd {
     float: left;
     margin-left: 2%;
+}
+
+#no-starter-color {
+    color: none;
 }

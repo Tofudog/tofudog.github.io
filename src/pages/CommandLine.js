@@ -20,16 +20,18 @@ function CommandLine() {
   
     const handleFormSubmit = (value) => {
         //check if input command is valid
+        let newValue = null;
         if (value === null || value === undefined) {
             value = "";
+            newValue = "";
         }
         let cmdElement = document.getElementById("rendered-output");
-        if (COMMAND_MAP.has(value)) {
+        if (COMMAND_MAP.has(newValue)) {
             const targetDiv = document.getElementById("command-line-output");
             if (targetDiv) {
                 const root = ReactDOM.createRoot(targetDiv);
                 //root.render(<ProjectComponent></ProjectComponent>);
-                const cmdComponent = COMMAND_MAP.get(value);
+                const cmdComponent = COMMAND_MAP.get(newValue);
                 root.render(cmdComponent);
             }
         }
