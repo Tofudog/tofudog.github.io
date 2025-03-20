@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Send from '../scripts/sendEmail';
 
 import "./../styles/ContactMe.css";
 
@@ -22,14 +23,16 @@ function ContactMe() {
     return <>
         <div>
             <h3>Keep in touch!</h3>
-            <div class="flex-container-contact">
-                <input type="text" id="fname" name="fname" value={inputName} onChange={handleNameChange}></input>
-                <input type="text" id="fname" name="fname" value={inputEmail} onChange={handleEmailChange}></input>
-            </div>
-            <div>
-                <input type="text" id="message-item" name="fname" value={inputMessage} onChange={handleMessageChange}></input>
-            </div>
-            <button id="send-message-button">Send Message</button>
+            <form>
+                <div class="flex-container-contact">
+                    <input type="text" id="input-name-contact" name="fname" value={inputName} onChange={handleNameChange}></input>
+                    <input type="text" id="input-email-contact" name="fname" value={inputEmail} onChange={handleEmailChange}></input>
+                </div>
+                <div>
+                    <input type="text" id="message-item" name="input-message-contact" value={inputMessage} onChange={handleMessageChange}></input>
+                </div>
+                <button id="send-message-button" type="button" onClick={Send}>Send Message</button>
+            </form>
         </div>
     </>
 }
