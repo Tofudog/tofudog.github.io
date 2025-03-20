@@ -7,6 +7,7 @@ import { COMMAND_MAP } from '../constants.js';
 
 function CommandLine() {
     const [inputValue, setInputValue] = useState('');
+    //const [root, setRoot] = useState(null);
 
     const handleChange = (event) => {
         setInputValue(event.target.value);
@@ -20,23 +21,22 @@ function CommandLine() {
   
     const handleFormSubmit = (value) => {
         //check if input command is valid
-        let newValue = null;
-        if (value === null || value === undefined) {
-            value = "";
+        var newValue = value;
+        if (value === undefined) {
             newValue = "";
         }
-        let cmdElement = document.getElementById("rendered-output");
         if (COMMAND_MAP.has(newValue)) {
             const targetDiv = document.getElementById("command-line-output");
             if (targetDiv) {
+                //setRoot(ReactDOM.createRoot(targetDiv));
                 const root = ReactDOM.createRoot(targetDiv);
-                //root.render(<ProjectComponent></ProjectComponent>);
                 const cmdComponent = COMMAND_MAP.get(newValue);
                 root.render(cmdComponent);
             }
         }
         else {
-            cmdElement.innerHTML = `<h4 style="color:tomato;">zsh: command not found: ${value}</h4>`;
+            let cmdElement = document.getElementById("rendered-output");
+            cmdElement.innerHTML = `<h4 style="color:tomato;">zsh: command not found: ${newValue}</h4>`;
         }
         document.getElementById("mock-command-line-id").value = "";
     };

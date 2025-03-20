@@ -10,7 +10,7 @@ function Home() {
             <div class="my-container">
                 <AboutMe></AboutMe>
                 <div id="my-section2">
-                    <h2 class="darker-color">{section}</h2>
+                    <h2 class="darker-color"></h2>
                 </div>
                 <div id="my-section3">
                     <CommandLine></CommandLine>

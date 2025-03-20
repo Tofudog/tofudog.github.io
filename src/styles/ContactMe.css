@@ -24,7 +24,7 @@ input {
     border-color: #369B00;
     border-width: 3px;
     color:#369B00;
-    width: 91%;
+    width: clamp(50px, 32.8vw, 100vw);
     height: 30px;
     margin-top: 5%;
 }
