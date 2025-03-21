@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d97b15fb.css",
-    "main.js": "/static/js/main.3e7720e5.js",
-    "static/js/488.d07c9134.chunk.js": "/static/js/488.d07c9134.chunk.js",
-    "static/media/pikachu.png": "/static/media/pikachu.efddf28f032008c0e960.png",
-    "static/media/linkedin_logo.png": "/static/media/linkedin_logo.d60fed426f40cb49d718.png",
-    "index.html": "/index.html",
-    "main.d97b15fb.css.map": "/static/css/main.d97b15fb.css.map",
-    "main.3e7720e5.js.map": "/static/js/main.3e7720e5.js.map",
-    "488.d07c9134.chunk.js.map": "/static/js/488.d07c9134.chunk.js.map"
+    "main.css": "/personal_website/static/css/main.5dc99a2a.css",
+    "main.js": "/personal_website/static/js/main.22c8b94a.js",
+    "static/js/488.d07c9134.chunk.js": "/personal_website/static/js/488.d07c9134.chunk.js",
+    "static/media/pikachu.png": "/personal_website/static/media/pikachu.efddf28f032008c0e960.png",
+    "static/media/linkedin_logo.png": "/personal_website/static/media/linkedin_logo.d60fed426f40cb49d718.png",
+    "index.html": "/personal_website/index.html",
+    "main.5dc99a2a.css.map": "/personal_website/static/css/main.5dc99a2a.css.map",
+    "main.22c8b94a.js.map": "/personal_website/static/js/main.22c8b94a.js.map",
+    "488.d07c9134.chunk.js.map": "/personal_website/static/js/488.d07c9134.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d97b15fb.css",
-    "static/js/main.3e7720e5.js"
+    "static/css/main.5dc99a2a.css",
+    "static/js/main.22c8b94a.js"
   ]
 }
