@@ -1,0 +1,25 @@
+{
+    "Projects": [
+        {
+            "projectLink": "https://github.com/Tofudog/Yeetcode",
+            "projectImageLink": "../assets/images/github_logo.jpeg",
+            "numStars": 4,
+            "title": "Yeetcode",
+            "description": "Chrome extension where Leetcode users battle against each other!"
+        },
+        {
+            "projectLink": "https://github.com/Tofudog/Emory_CS253",
+            "projectImageLink": "../assets/images/github_logo.jpeg",
+            "numStars": 1,
+            "title": "Emory CS253",
+            "description": "Repository containing fundamental data structures and algorithms taught in CS 253 at Emory University"
+        },
+        {
+            "projectLink": "https://github.com/Tofudog/personal_website",
+            "projectImageLink": "../assets/images/github_logo.jpeg",
+            "numStars": 1,
+            "title": "This website",
+            "description": "Beeeeep! I'm not sure a description is necessary..."
+        }
+    ]
+}

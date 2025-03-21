@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "cra-template": "1.2.0",
     "emailjs-com": "^3.2.0",
     "react": "^19.0.0",
@@ -10,7 +11,7 @@
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1"
   },
-  "homepage": "https://Tofudog.github.io/personal_website",
+  "homepage": "https://Tofudog.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",

@@ -1,16 +1,17 @@
-import MyHome from './MyHome.js'
-import MyJokes from "./pages/MyJokes";
-import './App.css'
+import Home from "./pages/Home.js";
+import Documentation from "./pages/Documentation.js";
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <div>
-        <MyHome></MyHome>
-      </div>
-      
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/documentation" element={<Documentation />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
