@@ -51,14 +51,6 @@ function ProjectComponent() {
       );
 }
 
-function ExperienceOutline(company, location, position, role, tech) {
-    
-}
-
-function ExperienceComponent() {
-
-}
-
 function ClearScreenComponent() {
     return <></>
 }

@@ -5,6 +5,7 @@
             "location": "Seattle, WA",
             "position": "SDE Intern",
             "what-i-did": "Incorporated multimodal LLM into an internal platform",
+            "dates": ["May 2024", "August 2024"],
             "tech": ["AWS", "Python", "Git/Github", "LLMs", "Regular Expressions"]
         },
         {
@@ -12,6 +13,7 @@
             "location": "remote",
             "position": "AI Intern",
             "what-i-did": "Contributed to research for matching guns with bullets using computer vision",
+            "dates": ["June 2023", "August 2023"],
             "tech": ["Tensorflow", "Google Colab"]
         }
     ]

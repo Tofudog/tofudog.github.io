@@ -1,6 +1,6 @@
 input {
-    width: 40%;
-    height: 20px;
+    width: clamp(100px, 40%, 220px);
+    height: clamp(40px, 22%, 200px);
     background-color: rgb(0, 0, 0);
     border-color: #369B00;
     border-width: 3px;
@@ -13,9 +13,10 @@ input {
 }
 
 #message-item {
-    width: 90%;
+    width: clamp(220px, 100%, 420px);
+    height: clamp(100px, 30%, 200px);
     height: 70px;
-    margin-top: 4%;
+    margin-top: 5%;
     border-width: 5px;
 }
 
@@ -24,8 +25,14 @@ input {
     border-color: #369B00;
     border-width: 3px;
     color:#369B00;
-    width: clamp(50px, 32.8vw, 100vw);
+    width: clamp(220px, 100%, 420px);
     height: 30px;
     margin-top: 5%;
+}
+
+#send-message-button:active {
+    border-color: rgb(1, 62, 34);
+    background-color: rgb(14, 13, 13);
+    font-weight: bolder;
 }
 
