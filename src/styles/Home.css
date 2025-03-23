@@ -83,6 +83,10 @@ a {
     margin-bottom: 10%;
 }
 
+.gif {
+    width: 30%;
+}
+
 #section1 {
     float: left;
     width: 35%;
@@ -92,12 +96,12 @@ a {
 #my-section2 {
     float: left;
     margin-left: 40%;
-    width: 7%;
+    width: clamp(34px, 1.5vw, 50px);
 }
 
 #my-section3 {
     float: left;
-    width: 40%;
+    width: 50%;
 }
 
 #documentation-layout {

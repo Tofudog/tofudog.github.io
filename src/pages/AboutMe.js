@@ -1,6 +1,6 @@
 import NavBar from "./NavBar.js";
 import ContactMe from "./ContactMe.js";
-import ChangingTextColor from "./ColorPallete.js";
+import ChangingTextColor from "../components/ColorPallete.js";
 
 import logo from "./../assets/images/pikachu.png";
 import github_logo from "./../assets/images/github_logo.jpeg";

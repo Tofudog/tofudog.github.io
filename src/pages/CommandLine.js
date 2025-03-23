@@ -1,8 +1,7 @@
 import {Link} from 'react-router-dom'
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ReactDOM from "react-dom/client";
-import runCommand from '../scripts/commands.js';
 import { COMMAND_MAP } from '../constants.js';
 
 function CommandLine() {

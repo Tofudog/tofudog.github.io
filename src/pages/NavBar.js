@@ -1,4 +1,4 @@
-import ChangingTextColor from "./ColorPallete";
+import ChangingTextColor from "../components/ColorPallete";
 
 function NavBar() {
     return <>

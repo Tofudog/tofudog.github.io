@@ -1,10 +1,10 @@
 import "./../styles/Home.css"
 import AboutMe from "./AboutMe.js";
 import CommandLine from "./CommandLine.js";
-import output01 from "../scripts/generate01s.js";
+//import output01 from "../scripts/generate01s.js";
 
 function Home() {
-    const section = output01();
+    //const section = output01();
     return <>
         <div class="vertical-section">
             <div class="my-container">

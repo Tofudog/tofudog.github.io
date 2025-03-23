@@ -1,6 +1,8 @@
 import "../styles/Project.css";
 import jsonData from '../data/skills.json';
 
+const MALLOW_SRC = "https://media.tenor.com/9EWlRwyQ-2wAAAAj/super-mario-super-mario-rpg.gif";
+
 function SkillsOutline(skills, color) {
     return <>
         <ul>
@@ -20,9 +22,14 @@ function SkillsComponent() {
     componentList.push(SkillsOutline(personalSkills, "yellow"));
     return (
         <div>
-            {componentList.map((item) => (
-                <div>{item}</div>
-            ))}
+            <div>
+                {componentList.map((item) => (
+                    <div>{item}</div>
+                ))}
+            </div>
+            <div>
+                <img src={MALLOW_SRC} class="gif" fetchpriority="high"></img>
+            </div>
         </div>
       );
 }
