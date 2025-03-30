@@ -1,5 +1,5 @@
 input {
-    width: clamp(100px, 40%, 220px);
+    width: 215px;
     height: clamp(40px, 22%, 200px);
     background-color: rgb(0, 0, 0);
     border-color: #369B00;
@@ -7,27 +7,33 @@ input {
     color:#369B00;
 }
 
+textarea {
+    background-color: black;
+    border-color: #369B00;
+    border: 4px;
+    color: #369B00; 
+}
+
 .flex-container-contact {
     display: flex;
-    gap: 10%;
+    gap: 10px;
 }
 
 #message-item {
-    width: clamp(220px, 100%, 420px);
-    height: clamp(100px, 30%, 200px);
-    height: 70px;
-    margin-top: 5%;
+    margin-top: 25px;
+    width: 445px;
+    height: 80px;
     border-width: 5px;
 }
 
 #send-message-button {
+    margin-top: 25px;
     background-color: rgb(0, 0, 0);
     border-color: #369B00;
     border-width: 3px;
     color:#369B00;
-    width: clamp(220px, 100%, 420px);
+    width: 460px;
     height: 30px;
-    margin-top: 5%;
 }
 
 #send-message-button:active {

@@ -1,27 +1,27 @@
 h1 {
     color: #59FF00;
     /* font-size: 3vw; */
-    font-size: clamp(29px, 3vw, 36px);
+    /* font-size: clamp(29px, 3vw, 36px); */
 }
 
 h2 {
     color: #59FF00;
-    font-size: clamp(20px, 2vw, 28px);
+    /* font-size: clamp(20px, 2vw, 28px); */
 }
 
 h3 {
     color: #59FF00;
-    font-size: clamp(15px, 1.5vw, 25px);
+    /* font-size: clamp(15px, 1.5vw, 25px); */
 }
 
 h4 {
     color: #369B00;
-    font-size: clamp(12px, 1.2vw, 21px);
+    /* font-size: clamp(12px, 1.2vw, 21px); */
 }
 
 h5 {
     color: #59FF00;
-    font-size: clamp(9px, 1vw, 19px);
+    /* font-size: clamp(9px, 1vw, 19px); */
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 img {
-    width: 60%;
+    width: 60px;
     border-radius: 50%;
 }
 
@@ -39,7 +39,7 @@ a {
 }
 
 .vertical-section {
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .darker-color {
@@ -61,10 +61,9 @@ a {
 }
 
 .flex-item {
-    width: 20%;
     /* margin-right: -1%; */
-    padding-top: 5%;
-    padding-left: 2%;
+    padding-top: 30px;
+    padding-right: 43px;
 }
 
 .mock-command-line {
@@ -87,23 +86,6 @@ a {
     width: 30%;
 }
 
-#section1 {
-    float: left;
-    width: 35%;
-    position: fixed;
-}
-
-#my-section2 {
-    float: left;
-    margin-left: 40%;
-    width: clamp(34px, 1.5vw, 50px);
-}
-
-#my-section3 {
-    float: left;
-    width: 50%;
-}
-
 #documentation-layout {
     margin-left: 5%;
     margin-right: 25%;
@@ -120,4 +102,15 @@ a {
 
 #no-starter-color {
     color: none;
+}
+
+.test-flex-container {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+#test-space {
+    padding: 2%;
 }

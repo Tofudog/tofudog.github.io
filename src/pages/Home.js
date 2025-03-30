@@ -1,21 +1,28 @@
 import "./../styles/Home.css"
+import NavBar from "./NavBar.js";
 import AboutMe from "./AboutMe.js";
 import CommandLine from "./CommandLine.js";
+import ContactMe from "./ContactMe.js";
+import Socials from "./Socials.js";
 //import output01 from "../scripts/generate01s.js";
 
 function Home() {
     //const section = output01();
     return <>
-        <div class="vertical-section">
-            <div class="my-container">
+        <div class="test-flex-container">
+            <div id="test-space"></div>
+            <div>
+                <NavBar></NavBar>
+                <br></br>
                 <AboutMe></AboutMe>
-                <div id="my-section2">
-                    <h2 class="darker-color"></h2>
-                </div>
-                <div id="my-section3">
-                    <CommandLine></CommandLine>
-                </div>
+                <br></br><br></br>
+                <CommandLine></CommandLine>
+                <br></br><br></br><br></br>
+                <ContactMe></ContactMe>
+                <Socials></Socials>
+                <br></br><br></br>
             </div>
+            <div id="test-space"></div>
         </div>
     </>
 }
