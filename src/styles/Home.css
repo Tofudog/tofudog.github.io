@@ -1,8 +1,9 @@
 h1 {
-    color: #59FF00;
+    color: rgb(0, 0, 0);
+    /* color: #59FF00; */
     /* font-size: 3vw; */
     /* font-size: clamp(29px, 3vw, 36px); */
-}
+}   
 
 h2 {
     color: #59FF00;
@@ -28,6 +29,10 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+body:hover {
+    color: red;
+}
+
 img {
     width: 60px;
     border-radius: 50%;
@@ -35,7 +40,10 @@ img {
 
 a {
     color: yellow;
-    
+}
+
+a:hover {
+    color: red;
 }
 
 .vertical-section {
