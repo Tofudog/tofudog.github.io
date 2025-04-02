@@ -1,3 +1,5 @@
+This is my repository code for my personal website, built using Github Pages. To view this website, go to https://tofudog.github.io
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
