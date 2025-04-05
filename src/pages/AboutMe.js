@@ -6,10 +6,9 @@ function AboutMe() {
     return <>
         <div>
             <div>
-                <ChangingTextColor component="h1" text="Leonardo de Farias"></ChangingTextColor>
-                <ChangingTextColor component="h2" text="CS Student @Emory"></ChangingTextColor>
-                <ChangingTextColor component="h3" text="I am studying to be a software engineer, developing cool projects along the way"></ChangingTextColor>
-                {/* <img src={logo} /> */}
+                <br></br><br></br>
+                <p>Welcome to the Leoterminal</p>
+                <p>Type "<u>help</u>" to run commands and learn more about me</p>
             </div>
         </div>
     </>

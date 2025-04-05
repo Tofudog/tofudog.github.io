@@ -1,3 +1,9 @@
+p {
+    color: #4CBC0F;
+    font-family: 'IBM Plex Mono';
+    font-size: 22px;
+}
+
 h1 {
     color: rgb(0, 0, 0);
     /* color: #59FF00; */
@@ -6,31 +12,29 @@ h1 {
 }   
 
 h2 {
-    color: #59FF00;
+    color: #4CBC0F;
     /* font-size: clamp(20px, 2vw, 28px); */
+    font-family: 'IBM Plex Mono';
 }
 
 h3 {
-    color: #59FF00;
+    color: #4CBC0F;
     /* font-size: clamp(15px, 1.5vw, 25px); */
+    font-family: 'IBM Plex Mono';
 }
 
 h4 {
-    color: #369B00;
+    color: #4CBC0F;
     /* font-size: clamp(12px, 1.2vw, 21px); */
 }
 
 h5 {
-    color: #59FF00;
+    color: #4CBC0F;
     /* font-size: clamp(9px, 1vw, 19px); */
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-}
-
-body:hover {
-    color: red;
+    background-color: #04191C;
 }
 
 img {
@@ -51,7 +55,7 @@ a:hover {
 }
 
 .darker-color {
-    color: #369B00;
+    color: #317b09;
 }
 
 .white-text {
@@ -70,15 +74,12 @@ a:hover {
 
 .flex-item {
     /* margin-right: -1%; */
-    padding-top: 30px;
-    padding-right: 43px;
+    padding-top: 0px;
 }
 
 .mock-command-line {
     border-color: rgb(0, 0, 0);
     border-width: 0px;
-    width: fit-content;
-    size: 20%;
 }
 
 .my-container {
@@ -104,8 +105,7 @@ a:hover {
 }
 
 #flex-item-cmd {
-    float: left;
-    margin-left: 2%;
+    margin-left: 20px;
 }
 
 #no-starter-color {
@@ -121,4 +121,19 @@ a:hover {
 
 #test-space {
     padding: 2%;
+}
+
+#help-flex-container {
+    display: flex;
+    gap: 40px; /* space between the two columns */
+}
+
+#help-flex-item {
+    gap: 80px; /* vertical spacing between rows */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 8px 40px; /* row gap, column gap */
 }

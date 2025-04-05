@@ -1,10 +1,20 @@
 input {
     width: 215px;
     height: clamp(40px, 22%, 200px);
-    background-color: rgb(0, 0, 0);
+    background-color: #04191C;
     border-color: #369B00;
     border-width: 3px;
-    color:#369B00;
+    color:#D86859;
+    font-size: 17px;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+input:focus {
+    border: 2px solid #04191C; /* or any color you want */
+    outline: none; /* optional: removes the default outline */
 }
 
 textarea {

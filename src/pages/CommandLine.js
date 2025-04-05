@@ -41,25 +41,16 @@ function CommandLine() {
     };
 
     return <>
-        <div>
-            <h4>
-                Command Documentation:
-                &nbsp;
-                <Link to="/documentation" target="_blank" rel="noopener noreferrer">here</Link>
-            </h4>
-        </div>
         <div id="flex-container-cmd">
             <div>
-                <h4>
-                    hacker123@your-computer %
-                </h4>
+                <p>hacker123@your-computer %</p>
             </div>
             <div id="flex-item-cmd">
-                <h4>
+                <p>
                     <form onSubmit={handleSubmit} id="command-form" >
-                        <input onChange={handleChange} class="mock-command-line" id="mock-command-line-id"></input>
+                        <input placeholder="type a command and hit enter" onChange={handleChange} class="mock-command-line" id="mock-command-line-id"></input>
                     </form>
-                </h4>
+                </p>
             </div>
         </div>
         <div id="command-line-output">
