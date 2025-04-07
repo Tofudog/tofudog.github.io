@@ -1,5 +1,5 @@
 
-function ProjectComponent() {
+function ExperienceComponent() {
     return <>
         <div class="standout-box">
             
@@ -13,15 +13,15 @@ function MyExperiences() {
             <h1>Experiences</h1>
             <div class="flex-container">
                 <div id="flex-item">
-                    <ProjectComponent></ProjectComponent>
+                    <ExperienceComponent></ExperienceComponent>
                 </div>
                 <div id="special-space"></div>
                 <div id="flex-item">
-                    <ProjectComponent></ProjectComponent>
+                    <ExperienceComponent></ExperienceComponent>
                 </div>
                 <div id="special-space"></div>
                 <div id="flex-item">
-                    <ProjectComponent></ProjectComponent>
+                    <ExperienceComponent></ExperienceComponent>
                 </div>
             </div>
         </div>

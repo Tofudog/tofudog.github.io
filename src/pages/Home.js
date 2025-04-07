@@ -7,6 +7,10 @@ import CommandLine from "./CommandLine.js";
 import ContactMe from "./ContactMe.js";
 import Socials from "./Socials.js";
 import MyExperiences from "./MyExperiences.js";
+import MyProjects from "./MyProjects.js";
+import MySkills from "./MySkills.js";
+import MyContactMe from "./MyContactMe.js";
+import BottomNavbar from "./BottomNavbar.js";
 
 import mii_logo from "./../assets/images/mii_photo.png";
 import ness_photo from "./../assets/images/ness_photo.png";
@@ -44,7 +48,24 @@ function Home() {
             <div>
                 <MyExperiences></MyExperiences>
             </div>
-            <br></br><br></br><br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br>
+            <div>
+                <MyProjects></MyProjects>
+            </div>
+            <br></br><br></br><br></br><br></br>
+            <div>
+                <MySkills></MySkills>
+            </div>
+            <br></br><br></br><br></br><br></br>
+        </div>
+        <div id="contact-part">
+            <div class="space-left">
+                <MyContactMe></MyContactMe>
+            </div>
+            <br></br><br></br>
+        </div>
+        <div id="bottom-part">
+            <BottomNavbar></BottomNavbar>
         </div>
     </>
 }

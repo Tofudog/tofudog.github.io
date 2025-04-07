@@ -1,0 +1,21 @@
+{
+    "languages": [
+        [78778, "Python", "https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/python/logo.png"],
+        [88881, "Java", "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png"],
+        [27271, "C++", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"],
+        [16391, "Javscript", "https://static.vecteezy.com/system/resources/thumbnails/048/332/149/small_2x/js-icon-transparent-background-free-png.png"]
+    ],
+    "frameworks": [
+        [18783, "React JS", "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"],
+        [18783, "Node JS", "https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png"],
+        [18783, "Kivy", "https://upload.wikimedia.org/wikipedia/commons/5/58/Kivy_logo.png"],
+        [18783, "Tensorflow", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png"],
+        [18783, "Matplotlib", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/2048px-Created_with_Matplotlib-logo.svg.png"]
+    ],
+    "tools": [
+        [18921, "Figma", "https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png"],
+        [18921, "Git", "https://cdn.iconscout.com/icon/free/png-256/free-git-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-225996.png?f=webp&w=256"],
+        [18921, "Mongo DB", "https://www.svgrepo.com/show/331488/mongodb.svg"],
+        [18921, "AWS", "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png"]
+    ]
+}
