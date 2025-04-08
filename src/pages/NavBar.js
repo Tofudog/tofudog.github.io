@@ -1,4 +1,3 @@
-import "./../styles/Home.css";
 import terminal_logo from "./../assets/images/terminal_logo.png"
 
 import ChangingTextColor from "../components/ColorPallete";
@@ -17,29 +16,32 @@ function NavBar() {
                     Leonardo de Farias
                 </p>
             </div>
-            <div id="top-part-space"></div>
-            <div class="flex-item">
-                <p class="nice-text">
-                    About
-                </p>
-            </div>
-            <div class="flex-item">
-                <p class="nice-text">
-                    Projects
-                </p>
-            </div>
-            <div class="flex-item">
-                <p class="nice-text">
-                    Skills
-                </p>
-            </div>
-            <div class="flex-item">
-                <p class="nice-text">
-                    Contact
-                </p>
-            </div>
-            <div class="flex-item">
-                <img id="top-part-image" src={terminal_logo} />
+            <div class="flex-container-backwards">
+                <div class="flex-item">
+                    <p class="nice-text">
+                        About
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <p class="nice-text">
+                        Projects
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <p class="nice-text">
+                        Skills
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <p class="nice-text">
+                        Contact
+                    </p>
+                </div>
+                <div class="flex-item">
+                    <Link to="/command-line" target="_blank" rel="noopener noreferrer">
+                        <img id="top-part-image" src={terminal_logo} />
+                    </Link>
+                </div>
             </div>
         </div>
     </>

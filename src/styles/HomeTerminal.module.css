@@ -4,6 +4,10 @@ p {
     font-size: 22px;
 }
 
+body {
+    color: #04191C;
+}
+
 h1 {
     color: rgb(0, 0, 0);
     /* color: #59FF00; */
@@ -28,13 +32,18 @@ h4 {
     /* font-size: clamp(12px, 1.2vw, 21px); */
 }
 
-h5 {
-    color: #4CBC0F;
-    /* font-size: clamp(9px, 1vw, 19px); */
-}
-
 body {
     background-color: #04191C;
+}
+
+input {
+    background-color: #04191C;
+    border-color: #04191C;
+    width: 300px;
+    color: red;
+}
+input:focus {
+    outline: none; /* Removes the white outline */
 }
 
 img {
@@ -66,10 +75,11 @@ a:hover {
     border-radius: 50%;
 }
 
-.flex-container {
+.flex-container-cmd {
     display: flex;
     margin: 0 2px;
     gap: 0px;
+
 }
 
 .flex-item {
@@ -119,8 +129,8 @@ a:hover {
     height: 100%;
 }
 
-#test-space {
-    padding: 2%;
+#test-space-cmd {
+    margin-left: 300px;
 }
 
 #help-flex-container {
@@ -136,4 +146,9 @@ a:hover {
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 8px 40px; /* row gap, column gap */
+}
+
+
+.main-color {
+    color: "red";
 }

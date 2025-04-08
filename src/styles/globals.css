@@ -1,20 +1,6 @@
-body {
-    background-color: #393D50;
-}
-
-h1 {
-    color: #E9E9E9;
-    font-size: 55px;
-}
-
-h3 {
-    color: #D0CCCC;
-}
-
-p {
-    color: #E9E9E9;
-}
-
+/*
+    Classes and Ids for the home page:
+*/
 .space-left {
     padding-top: 45px;
     padding-left: 50px;
@@ -31,10 +17,16 @@ p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .flex-item {
     padding-left: 50px;
+}
+
+.right-side {
+    margin-left: auto;
 }
 
 .nice-text {
@@ -58,6 +50,10 @@ p {
 
 .middle-text {
     text-align: center;
+}
+
+.bottom-image {
+    width: 35px;
 }
 
 #top-part {
@@ -133,4 +129,106 @@ p {
     width: 765px;
     height: 40px;
     background-color: #B9AEAE;
+}
+
+#nav-space {
+    width: 30%;
+}
+
+
+/*
+    Classes and Ids for the Leoterminal
+*/
+.vertical-section {
+    margin-left: 3%;
+}
+
+.darker-color {
+    color: #317b09;
+}
+
+.white-text {
+    color: white;
+}
+
+.circular-img {
+    border-radius: 50%;
+}
+
+.flex-container-cmd {
+    display: flex;
+    margin: 0 2px;
+    gap: 0px;
+
+}
+
+.flex-item {
+    /* margin-right: -1%; */
+    padding-top: 0px;
+}
+
+.mock-command-line {
+    border-color: rgb(0, 0, 0);
+    border-width: 0px;
+}
+
+.my-container {
+    float: left;
+    width: 100%;
+}
+
+.command {
+    margin-bottom: 10%;
+}
+
+.gif {
+    width: 30%;
+}
+
+#documentation-layout {
+    margin-left: 5%;
+    margin-right: 25%;
+}
+
+#flex-container-cmd {
+    display: flex;
+}
+
+#flex-item-cmd {
+    margin-left: 20px;
+}
+
+#no-starter-color {
+    color: none;
+}
+
+.test-flex-container {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+#test-space-cmd {
+    margin-left: 300px;
+}
+
+#help-flex-container {
+    display: flex;
+    gap: 40px; /* space between the two columns */
+}
+
+#help-flex-item {
+    gap: 80px; /* vertical spacing between rows */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 8px 40px; /* row gap, column gap */
+}
+
+
+.main-color {
+    color: "red";
 }

@@ -4,6 +4,8 @@ import { useState } from 'react';
 import ReactDOM from "react-dom/client";
 import { COMMAND_MAP } from '../constants.js';
 
+import "./../styles/HomeTerminal.module.css";
+
 function CommandLine() {
     const [inputValue, setInputValue] = useState('');
     //const [root, setRoot] = useState(null);
@@ -41,20 +43,25 @@ function CommandLine() {
     };
 
     return <>
-        <div id="flex-container-cmd">
-            <div>
-                <p>hacker123@your-computer %</p>
+        <br></br><br></br>
+        <div class="vertical-section">
+            <p>Welcome to the Leoterminal</p>
+            <p>Type "<u>help</u>" to run commands and learn more about me</p>
+            <div id="flex-container-cmd">
+                <div>
+                    <p>hacker123@your-computer %</p>
+                </div>
+                <div id="flex-item-cmd">
+                    <p>
+                        <form onSubmit={handleSubmit} id="command-form" >
+                            <input placeholder="type a command and hit enter" onChange={handleChange} class="mock-command-line" id="mock-command-line-id"></input>
+                        </form>
+                    </p>
+                </div>
             </div>
-            <div id="flex-item-cmd">
-                <p>
-                    <form onSubmit={handleSubmit} id="command-form" >
-                        <input placeholder="type a command and hit enter" onChange={handleChange} class="mock-command-line" id="mock-command-line-id"></input>
-                    </form>
-                </p>
+            <div id="command-line-output">
+                <h4 id="rendered-output"></h4>
             </div>
-        </div>
-        <div id="command-line-output">
-            <h4 id="rendered-output"></h4>
         </div>
     </>
 }

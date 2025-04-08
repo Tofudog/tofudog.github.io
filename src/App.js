@@ -1,5 +1,6 @@
 import Home from "./pages/Home.js";
 import Documentation from "./pages/Documentation.js";
+import CommandLine from "./pages/CommandLine.js";
 
 // import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/documentation" element={<Documentation />} />
+          <Route path="/command-line" element={<CommandLine />} />
         </Routes>
       </Router>
     </>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import "./../styles/Home.css";
+import "./../styles/globals.css";
+import "./../styles/Home.module.css";
 import NavBar from "./NavBar.js";
 import AboutMe from "./AboutMe.js";
 import CommandLine from "./CommandLine.js";
@@ -62,7 +63,7 @@ function Home() {
             <div class="space-left">
                 <MyContactMe></MyContactMe>
             </div>
-            <br></br><br></br>
+            <br></br><br></br><br></br>
         </div>
         <div id="bottom-part">
             <BottomNavbar></BottomNavbar>
