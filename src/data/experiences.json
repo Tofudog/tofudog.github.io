@@ -1,20 +1,31 @@
 {
-    "Experiences": [
+    "experiences": [
         {
             "company": "Amazon",
             "location": "Seattle, WA",
             "position": "SDE Intern",
-            "what-i-did": "Incorporated multimodal LLM into an internal platform",
+            "description": "We'll see shortly",
+            "dates": ["May 2025", "August 2025"],
+            "tech": [],
+            "logo": "https://static.vecteezy.com/system/resources/thumbnails/019/766/240/small/amazon-logo-amazon-icon-transparent-free-png.png"
+        },
+        {
+            "company": "Amazon",
+            "location": "Seattle, WA",
+            "position": "SDE Intern",
+            "description": "Incorporated multimodal LLM into an internal platform",
             "dates": ["May 2024", "August 2024"],
-            "tech": ["AWS", "Python", "Git/Github", "LLMs", "Regular Expressions"]
+            "tech": ["AWS", "Python", "Git/Github", "LLMs", "Regular Expressions"],
+            "logo": "https://static.vecteezy.com/system/resources/thumbnails/019/766/240/small/amazon-logo-amazon-icon-transparent-free-png.png"
         },
         {
             "company": "Oteemo",
             "location": "remote",
             "position": "AI Intern",
-            "what-i-did": "Contributed to research for matching guns with bullets using computer vision",
+            "description": "Contributed to research for matching guns with bullets using computer vision",
             "dates": ["June 2023", "August 2023"],
-            "tech": ["Tensorflow", "Google Colab"]
+            "tech": ["Tensorflow", "Google Colab"],
+            "logo": "https://c.smartrecruiters.com/sr-company-logo-prod-aws-dc5/5b0ee6b9e4b0aa23f5f4a9a0/huge?r=s3-eu-central-1&_1528222885190"
         }
     ]
 }

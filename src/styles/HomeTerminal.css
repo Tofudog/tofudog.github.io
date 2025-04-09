@@ -1,63 +1,76 @@
-p {
+
+/*
+    Main tags, but only for Leoterminal
+*/
+#terminal-form {
+    /* currently only rendering top part */
+    background-color: #04191C; 
+}
+
+#terminal-form p {
     color: #4CBC0F;
     font-family: 'IBM Plex Mono';
     font-size: 22px;
 }
 
-body {
+#terminal-form body {
     color: #04191C;
 }
 
-h1 {
+#terminal-form h1 {
     color: rgb(0, 0, 0);
     /* color: #59FF00; */
     /* font-size: 3vw; */
     /* font-size: clamp(29px, 3vw, 36px); */
 }   
 
-h2 {
+#terminal-form h2 {
     color: #4CBC0F;
     /* font-size: clamp(20px, 2vw, 28px); */
     font-family: 'IBM Plex Mono';
 }
 
-h3 {
+#terminal-form h3 {
     color: #4CBC0F;
     /* font-size: clamp(15px, 1.5vw, 25px); */
     font-family: 'IBM Plex Mono';
 }
 
-h4 {
+#terminal-form h4 {
     color: #4CBC0F;
     /* font-size: clamp(12px, 1.2vw, 21px); */
 }
 
-body {
+#terminal-form body {
     background-color: #04191C;
 }
 
-input {
+#terminal-form input {
     background-color: #04191C;
     border-color: #04191C;
     width: 300px;
     color: red;
 }
-input:focus {
+#terminal-form input:focus {
     outline: none; /* Removes the white outline */
 }
 
-img {
+#terminal-form img {
     width: 60px;
     border-radius: 50%;
 }
 
-a {
+#terminal-form a {
     color: yellow;
 }
 
-a:hover {
+#terminal-form a:hover {
     color: red;
 }
+
+
+
+
 
 .vertical-section {
     margin-left: 3%;

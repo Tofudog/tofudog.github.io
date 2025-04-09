@@ -1,6 +1,10 @@
 /*
     Classes and Ids for the home page:
 */
+body {
+    background-color: #04191C;
+}
+
 .space-left {
     padding-top: 45px;
     padding-left: 50px;
@@ -41,6 +45,14 @@
     border-radius: 10%;
     border: 30px;
     background-color: #4C5169;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .skill-image {
@@ -54,6 +66,10 @@
 
 .bottom-image {
     width: 35px;
+}
+
+.company-logo {
+    width: 215px;
 }
 
 #top-part {
