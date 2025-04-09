@@ -20,9 +20,7 @@ function MyContactMe() {
             <form>
                 <div class="flex-container">
                     <input type="text" id="input-name-box" name="fname" placeholder={inputName} onChange={handleNameChange}></input>
-                    <div class="flex-item">
-                        <input type="text" id="input-email-box" name="fname" placeholder={inputEmail} onChange={handleEmailChange}></input>
-                    </div>
+                    <input type="text" id="input-email-box" name="fname" placeholder={inputEmail} onChange={handleEmailChange}></input>
                 </div>
                 <br></br>
                 <div>

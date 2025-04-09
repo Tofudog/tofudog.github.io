@@ -5,6 +5,18 @@ body {
     background-color: #04191C;
 }
 
+h2 {
+    color:#E5DEDE;
+    font-size: 32px;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: rgb(163, 2, 2);
+}
+
 .space-left {
     padding-top: 45px;
     padding-left: 50px;
@@ -115,7 +127,8 @@ body {
 }
 
 #input-name-box {
-    width: 350px;
+    /* width: 350px; */
+    width: 35vw;
     height: 44px;
     background-color: #B9AEAE;
 }
@@ -124,7 +137,9 @@ body {
 }
 
 #input-email-box {
-    width: 350px;
+    /* width: 350px; */
+    margin-left: 10vw;
+    width: 35vw;
     height: 44px;
     background-color: #B9AEAE;
 }
@@ -133,7 +148,8 @@ body {
 }
 
 #input-message-box {
-    width: 757px;
+    /* width: 757px; */
+    width: 81vw;
     height: 74px;
     background-color: #B9AEAE;
 }
@@ -142,7 +158,8 @@ body {
 }
 
 #send-message-button {
-    width: 765px;
+    /* width: 765px; */
+    width: 82vw;
     height: 40px;
     background-color: #B9AEAE;
 }
@@ -150,6 +167,11 @@ body {
 #nav-space {
     width: 30%;
 }
+
+#navbar-image {
+    width: 35px;
+}
+
 
 
 /*
@@ -248,3 +270,21 @@ body {
 .main-color {
     color: "red";
 }
+
+/*
+    Snow effect css rendering
+*/
+@keyframes fall {
+    0% {
+      transform: translateY(-10vh);
+    }
+    100% {
+      transform: translateY(110vh);
+    }
+  }
+  
+  .animate-fall {
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }

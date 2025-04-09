@@ -53,9 +53,7 @@ function Home() {
                 </div>
                 <br></br><br></br><br></br>
             </div>
-            <div id="bottom-part">
-                <BottomNavbar></BottomNavbar>
-            </div>
+
         </div>
     </>
 }
