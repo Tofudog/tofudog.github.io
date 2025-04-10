@@ -9,6 +9,13 @@ import { Link } from 'react-router-dom';
                 <ChangingTextColor component="h5" text="ldefari@Leonardos-Laptop personal_website % alright npm deploy i guess :("></ChangingTextColor> }
 */
 
+const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' }); // Optional smooth scrolling
+    }
+  };
+
 function NavBarNames() {
     return <>
         <div class="flex-container-backwards">
@@ -43,10 +50,12 @@ function NavBarNames() {
 
 function NavListComponent() {
     return <>
-        <h4>About</h4>
-        <h4>Projects</h4>
-        <h4>Skills</h4>
-        <h4>Contact</h4>
+        <div id="navbar-absolute">
+            <a onClick={() => scrollToSection("about-me")}><h4>About</h4></a>
+            <a onClick={() => scrollToSection("my-projects")}><h4>Projects</h4></a>
+            <a onClick={() => scrollToSection("my-skills")}><h4>Skills</h4></a>
+            <a onClick={() => scrollToSection("contact-part")}><h4>Contact</h4></a>
+        </div>
     </>
 }
 
@@ -57,17 +66,18 @@ function ClickedMe(navShows, setNavShows) {
 function NavBarList() {
     const [navShows, setNavShows] = useState(false); //determine whether navlist is being rendered
     return <>
-        <div class="flex-container-backwards">
-            <div class="flex-item">
-                <button onClick={() => ClickedMe(navShows, setNavShows)}>
-                    <img id="navbar-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNGLGilxB_EygnmkdbDYDcJNFVdbKtzh0tQ&s"></img>
-                </button>
-                {navShows && <NavListComponent></NavListComponent>}
-                {/* <a>
-                    {console.log(navShows) && setNavShows(!navShows)}
-                    <img id="navbar-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNGLGilxB_EygnmkdbDYDcJNFVdbKtzh0tQ&s"></img>
-                </a> */}
-            </div>
+            <div class="flex-container-backwards">
+                <div class="flex-item">
+                    <button onClick={() => ClickedMe(navShows, setNavShows)}>
+                        <img id="navbar-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNGLGilxB_EygnmkdbDYDcJNFVdbKtzh0tQ&s"></img>
+                    </button>
+                    {navShows && <NavListComponent></NavListComponent>}
+                </div>
+                <div class="flex-item">
+                    <Link to="/command-line" target="_blank" rel="noopener noreferrer">
+                        <img id="top-part-image" src={terminal_logo} />
+                    </Link>
+                </div>
         </div>
     </>
 }

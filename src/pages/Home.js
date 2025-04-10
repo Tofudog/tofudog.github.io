@@ -22,7 +22,7 @@ function Home() {
             <div>
                 <NavBar></NavBar>
             </div>
-            <div class="space-left">
+            <div id="about-me" class="space-left">
                 <h1>
                     About Me
                 </h1>
@@ -38,11 +38,11 @@ function Home() {
                     <MyExperiences></MyExperiences>
                 </div>
                 <br></br><br></br><br></br><br></br>
-                <div>
+                <div id="my-projects">
                     <MyProjects></MyProjects>
                 </div>
                 <br></br><br></br><br></br><br></br>
-                <div>
+                <div id="my-skills">
                     <MySkills></MySkills>
                 </div>
                 <br></br><br></br><br></br><br></br>
