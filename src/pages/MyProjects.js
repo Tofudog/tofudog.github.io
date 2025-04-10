@@ -33,7 +33,7 @@ function MyProjects() {
                 {componentList.map((item, index) => (
                     <React.Fragment id="flex-item" key={index}>
                         <div>{item}</div>
-                        <div id="special-space"></div>
+                        {/* <div id="special-space"></div> */}
                     </React.Fragment>
                 ))}
             </div>

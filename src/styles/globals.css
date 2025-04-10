@@ -27,6 +27,7 @@ a:hover {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .flex-container-backwards {
@@ -170,6 +171,11 @@ a:hover {
 
 #navbar-image {
     width: 35px;
+}
+
+#flex-container-contact {
+    display: flex;
+    width: 5vw;
 }
 
 
