@@ -155,9 +155,11 @@ a:hover {
 
 #input-name-box {
     /* width: 350px; */
-    width: 35vw;
+    width: 40vw;
     height: 44px;
     background-color: #B9AEAE;
+    border-width: 3px;
+    border-color: #000000;
 }
 #input-name-box::placeholder {
     color: rgb(59, 46, 46);
@@ -165,20 +167,27 @@ a:hover {
 
 #input-email-box {
     /* width: 350px; */
-    margin-left: 10vw;
-    width: 35vw;
+    margin-left: 5vw;
+    width: 40vw;
     height: 44px;
     background-color: #B9AEAE;
+    border-width: 3px;
+    border-color: #000000;
 }
 #input-email-box::placeholder {
     color: rgb(59, 46, 46);
 }
+* {
+    box-sizing: border-box;
+  }
 
 #input-message-box {
     /* width: 757px; */
-    width: 81vw;
+    width: 85vw;
     height: 74px;
     background-color: #B9AEAE;
+    border-width: 3px;
+    border-color: #000000;
 }
 #input-message-box::placeholder {
     color: rgb(59, 46, 46);
@@ -186,9 +195,14 @@ a:hover {
 
 #send-message-button {
     /* width: 765px; */
-    width: 82vw;
+    width: 85vw;
     height: 40px;
     background-color: #B9AEAE;
+    border-width: 3px;
+    border-color: #000000;
+}
+#send-message-button:active {
+    background-color: #a49a9a;
 }
 
 #nav-space {
@@ -201,13 +215,13 @@ a:hover {
 
 #flex-container-contact {
     display: flex;
-    width: 5vw;
+    /* width: 5vw; */
 }
 
 #navbar-absolute {
     position: absolute;
     background-color: rgb(184, 182, 220);
-    width: 115px;
+    width: 135px;
     padding-left: 18px;
 }
 

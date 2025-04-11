@@ -26,6 +26,11 @@ function NavBarNames() {
             </div>
             <div class="flex-item">
                 <p class="nice-text">
+                    Experiences
+                </p>
+            </div>
+            <div class="flex-item">
+                <p class="nice-text">
                     Projects
                 </p>
             </div>
@@ -52,6 +57,7 @@ function NavListComponent() {
     return <>
         <div id="navbar-absolute">
             <a onClick={() => scrollToSection("about-me")}><h4>About</h4></a>
+            <a onClick={() => scrollToSection("my-experiences")}><h4>Experiences</h4></a>
             <a onClick={() => scrollToSection("my-projects")}><h4>Projects</h4></a>
             <a onClick={() => scrollToSection("my-skills")}><h4>Skills</h4></a>
             <a onClick={() => scrollToSection("contact-part")}><h4>Contact</h4></a>
@@ -105,8 +111,8 @@ function NavBar() {
                     Leonardo de Farias
                 </p>
             </div>
-            {screenWidth >= 775 && <NavBarNames></NavBarNames>}
-            {screenWidth < 775 && <NavBarList></NavBarList>}
+            {screenWidth >= 950 && <NavBarNames></NavBarNames>}
+            {screenWidth <= 950 && <NavBarList></NavBarList>}
         </div>
     </>
 }
