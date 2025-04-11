@@ -20,29 +20,19 @@ function NavBarNames() {
     return <>
         <div class="flex-container-backwards">
             <div class="flex-item">
-                <p class="nice-text">
-                    About
-                </p>
+                <a onClick={() => scrollToSection("about-me")}><p>About</p></a>
             </div>
             <div class="flex-item">
-                <p class="nice-text">
-                    Experiences
-                </p>
+                <a onClick={() => scrollToSection("my-experiences")}><p>Experiences</p></a>
             </div>
             <div class="flex-item">
-                <p class="nice-text">
-                    Projects
-                </p>
+                <a onClick={() => scrollToSection("my-projects")}><p>Projects</p></a>
             </div>
             <div class="flex-item">
-                <p class="nice-text">
-                    Skills
-                </p>
+                <a onClick={() => scrollToSection("my-skills")}><p>Skills</p></a>
             </div>
             <div class="flex-item">
-                <p class="nice-text">
-                    Contact
-                </p>
+                <a onClick={() => scrollToSection("contact-part")}><p>Contact</p></a>
             </div>
             <div class="flex-item">
                 <Link to="/command-line" target="_blank" rel="noopener noreferrer">
