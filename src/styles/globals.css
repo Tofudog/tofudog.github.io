@@ -17,9 +17,12 @@ a:hover {
     color: rgb(163, 2, 2);
 }
 
-.space-left {
+.space-top {
     padding-top: 45px;
-    padding-left: 50px;
+}
+
+.space-left {
+    padding-left: 30px;
 }
 
 .flex-container {
@@ -27,7 +30,7 @@ a:hover {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 3vw;
 }
 
 .flex-container-backwards {
@@ -39,7 +42,11 @@ a:hover {
 }
 
 .flex-item {
-    padding-left: 50px;
+    padding-left: 6vw;
+}
+
+.flex-item-navs {
+    padding-right: 20px;
 }
 
 .right-side {
@@ -155,7 +162,7 @@ a:hover {
 
 #input-name-box {
     /* width: 350px; */
-    width: 40vw;
+    width: 32vw;
     height: 44px;
     background-color: #B9AEAE;
     border-width: 3px;
@@ -168,7 +175,7 @@ a:hover {
 #input-email-box {
     /* width: 350px; */
     margin-left: 5vw;
-    width: 40vw;
+    width: 32vw;
     height: 44px;
     background-color: #B9AEAE;
     border-width: 3px;
@@ -183,7 +190,7 @@ a:hover {
 
 #input-message-box {
     /* width: 757px; */
-    width: 85vw;
+    width: 69vw;
     height: 74px;
     background-color: #B9AEAE;
     border-width: 3px;
@@ -195,7 +202,7 @@ a:hover {
 
 #send-message-button {
     /* width: 765px; */
-    width: 85vw;
+    width: 69vw;
     height: 40px;
     background-color: #B9AEAE;
     border-width: 3px;

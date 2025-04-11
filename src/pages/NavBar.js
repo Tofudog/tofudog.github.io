@@ -73,13 +73,13 @@ function NavBarList() {
     const [navShows, setNavShows] = useState(false); //determine whether navlist is being rendered
     return <>
             <div class="flex-container-backwards">
-                <div class="flex-item">
+                <div class="flex-item-navs">
                     <button onClick={() => ClickedMe(navShows, setNavShows)}>
                         <img id="navbar-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNGLGilxB_EygnmkdbDYDcJNFVdbKtzh0tQ&s"></img>
                     </button>
                     {navShows && <NavListComponent></NavListComponent>}
                 </div>
-                <div class="flex-item">
+                <div class="flex-item-navs">
                     <Link to="/command-line" target="_blank" rel="noopener noreferrer">
                         <img id="top-part-image" src={terminal_logo} />
                     </Link>

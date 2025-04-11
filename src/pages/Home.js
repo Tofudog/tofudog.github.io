@@ -22,32 +22,32 @@ function Home() {
             <div>
                 <NavBar></NavBar>
             </div>
-            <div id="about-me" class="space-left">
-                <h1>
+            <div id="about-me" class="space-top">
+                <h1 class="space-left">
                     About Me
                 </h1>
-                <div id="profile-frame">
+                <div class="space-left" id="profile-frame">
                     <img id="profile-picture" src={ness_photo} />
                 </div>
-                <h3 id="profile-text">
+                <h3 class="space-left" id="profile-text">
                     My name is Leonardo de Farias and I am a Computer Science major
                     at Emory University. I like to build projects and learn new things.
                 </h3>
                 <br></br><br></br><br></br><br></br>
-                <div id="my-experiences">
+                <div class="space-left" id="my-experiences">
                     <MyExperiences></MyExperiences>
                 </div>
                 <br></br><br></br><br></br><br></br>
-                <div id="my-projects">
+                <div class="space-left" id="my-projects">
                     <MyProjects></MyProjects>
                 </div>
                 <br></br><br></br><br></br><br></br>
-                <div id="my-skills">
+                <div class="space-left" id="my-skills">
                     <MySkills></MySkills>
                 </div>
                 <br></br><br></br><br></br><br></br>
             </div>
-            <div id="contact-part">
+            <div class="space-left" id="contact-part">
                 <div class="space-left">
                     <MyContactMe></MyContactMe>
                 </div>
