@@ -1,0 +1,13 @@
+{
+    "Skills":
+        {
+            "tech": [
+                "Python", "Java", "C++", "Javascript",
+                "React", "Node", "AWS", "MongoDB",
+                "Git"
+            ],
+            "personal": [
+                "Critical Thinking", "Curious", "Biased for Action"
+            ]
+        }
+}

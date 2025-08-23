@@ -1,31 +1,54 @@
-input {
-    width: 40%;
-    height: 20px;
-    background-color: rgb(0, 0, 0);
+/* input {
+    width: 215px;
+    height: clamp(40px, 22%, 200px);
+    background-color: #04191C;
     border-color: #369B00;
     border-width: 3px;
-    color:#369B00;
-}
+    color:#D86859;
+    font-size: 17px;
+} */
+/* 
+input::placeholder {
+    font-size: 14px;
+} */
+
+/* input:focus {
+    border: 2px solid #04191C;
+    outline: none;
+} */
+
+/* textarea {
+    background-color: black;
+    border-color: #369B00;
+    border: 4px;
+    color: #369B00; 
+} */
 
 .flex-container-contact {
     display: flex;
-    gap: 10%;
+    gap: 0px;
 }
 
-#message-item {
-    width: 90%;
-    height: 70px;
-    margin-top: 4%;
+/* #message-item {
+    margin-top: 25px;
+    width: 445px;
+    height: 80px;
     border-width: 5px;
-}
+} */
 
-#send-message-button {
+/* #send-message-button {
+    margin-top: 25px;
     background-color: rgb(0, 0, 0);
     border-color: #369B00;
     border-width: 3px;
     color:#369B00;
-    width: clamp(50px, 32.8vw, 100vw);
+    width: 460px;
     height: 30px;
-    margin-top: 5%;
-}
+} */
+/* 
+#send-message-button:active { */
+    /* border-color: rgb(1, 62, 34);
+    background-color: rgb(14, 13, 13);
+    font-weight: bolder;
+} */
 

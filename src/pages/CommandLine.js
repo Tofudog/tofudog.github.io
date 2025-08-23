@@ -1,9 +1,11 @@
 import {Link} from 'react-router-dom'
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ReactDOM from "react-dom/client";
-import runCommand from '../scripts/commands.js';
 import { COMMAND_MAP } from '../constants.js';
+
+import "./../styles/globals.css";
+import "./../styles/HomeTerminal.css";
 
 function CommandLine() {
     const [inputValue, setInputValue] = useState('');
@@ -42,29 +44,27 @@ function CommandLine() {
     };
 
     return <>
-        <div>
-            <h4>
-                Command Documentation:
-                &nbsp;
-                <Link to="/documentation" target="_blank" rel="noopener noreferrer">here</Link>
-            </h4>
-        </div>
-        <div id="flex-container-cmd">
-            <div>
-                <h4>
-                    hacker123@your-computer %
-                </h4>
+        <div id="terminal-form">
+            <br></br><br></br>
+            <div class="vertical-section">
+                <p>Welcome to the Leoterminal</p>
+                <p>Type "<u>help</u>" to run commands and learn more about me</p>
+                <div id="flex-container-cmd">
+                    <div>
+                        <p>hacker123@your-computer %</p>
+                    </div>
+                    <div id="flex-item-cmd">
+                        <p>
+                            <form onSubmit={handleSubmit} id="command-form" >
+                                <input placeholder="type a command and hit enter" onChange={handleChange} class="mock-command-line" id="mock-command-line-id"></input>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+                <div id="command-line-output">
+                    <h4 id="rendered-output"></h4>
+                </div>
             </div>
-            <div id="flex-item-cmd">
-                <h4>
-                    <form onSubmit={handleSubmit} id="command-form" >
-                        <input onChange={handleChange} class="mock-command-line" id="mock-command-line-id"></input>
-                    </form>
-                </h4>
-            </div>
-        </div>
-        <div id="command-line-output">
-            <h4 id="rendered-output"></h4>
         </div>
     </>
 }

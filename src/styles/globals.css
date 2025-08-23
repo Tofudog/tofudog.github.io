@@ -1,0 +1,349 @@
+/*
+    Classes and Ids for the home page:
+*/
+body {
+    background-color: #04191C;
+}
+
+h2 {
+    color:#E5DEDE;
+    font-size: 32px;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: rgb(163, 2, 2);
+}
+
+.space-top {
+    padding-top: 45px;
+}
+
+.space-left {
+    padding-left: 30px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.flex-container-backwards {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.flex-item {
+    padding-left: 6vw;
+}
+
+.flex-item-navs {
+    padding-right: 20px;
+}
+
+.right-side {
+    margin-left: auto;
+}
+
+.nice-text {
+    color: #E5DEDE;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.standout-box {
+    width: 280px;
+    height: 280px;
+    border-color: #000000;
+    border-radius: 10%;
+    border: 30px;
+    background-color: #4C5169;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.skill-image {
+    width: 100px;
+    height: 100px;
+}
+
+.middle-text {
+    text-align: center;
+}
+
+.bottom-image {
+    width: 35px;
+}
+
+.company-logo {
+    width: 215px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#top-part {
+    position: fixed;
+    background-color: #1f1d1d;
+    width: 100%;
+    height: 55px;
+    opacity: 90%;
+}
+
+#top-part-space {
+    width: 20%;
+}
+
+#top-part-image {
+    width: 40px;
+}
+
+#profile-picture {
+    width: 240px;
+}
+
+#profile-text {
+    width: 350px;
+    line-height: 25px;
+}
+
+#special-space {
+    padding-left: 8%;
+}
+
+#contact-part {
+    width: 100%;
+    height: 100%;
+    background-color: #42475C;
+}
+
+
+#bottom-part {
+    width: 100%;
+    height: 100%;
+    background-color: #2B2828;
+}
+
+#input-name-box {
+    /* width: 350px; */
+    width: 32vw;
+    height: 44px;
+    background-color: #B9AEAE;
+    border-width: 3px;
+    border-color: #000000;
+}
+#input-name-box::placeholder {
+    color: rgb(59, 46, 46);
+}
+
+#input-email-box {
+    /* width: 350px; */
+    margin-left: 5vw;
+    width: 32vw;
+    height: 44px;
+    background-color: #B9AEAE;
+    border-width: 3px;
+    border-color: #000000;
+}
+#input-email-box::placeholder {
+    color: rgb(59, 46, 46);
+}
+* {
+    box-sizing: border-box;
+  }
+
+#input-message-box {
+    /* width: 757px; */
+    width: 69vw;
+    height: 74px;
+    background-color: #B9AEAE;
+    border-width: 3px;
+    border-color: #000000;
+}
+#input-message-box::placeholder {
+    color: rgb(59, 46, 46);
+}
+
+#send-message-button {
+    /* width: 765px; */
+    width: 69vw;
+    height: 40px;
+    background-color: #B9AEAE;
+    border-width: 3px;
+    border-color: #000000;
+}
+#send-message-button:active {
+    background-color: #a49a9a;
+}
+
+#nav-space {
+    width: 30%;
+}
+
+#navbar-image {
+    width: 35px;
+}
+
+#flex-container-contact {
+    display: flex;
+    /* width: 5vw; */
+}
+
+#navbar-absolute {
+    position: absolute;
+    background-color: rgb(184, 182, 220);
+    width: 135px;
+    padding-left: 18px;
+}
+
+
+/*
+    Classes and Ids for the Leoterminal
+*/
+.vertical-section {
+    margin-left: 3%;
+}
+
+.darker-color {
+    color: #317b09;
+}
+
+.white-text {
+    color: white;
+}
+
+.circular-img {
+    border-radius: 50%;
+}
+
+.flex-container-cmd {
+    display: flex;
+    margin: 0 2px;
+    gap: 0px;
+
+}
+
+.flex-item {
+    /* margin-right: -1%; */
+    padding-top: 0px;
+}
+
+.mock-command-line {
+    border-color: rgb(0, 0, 0);
+    border-width: 0px;
+}
+
+.my-container {
+    float: left;
+    width: 100%;
+}
+
+.command {
+    margin-bottom: 10%;
+}
+
+.gif {
+    width: 30%;
+}
+
+#documentation-layout {
+    margin-left: 5%;
+    margin-right: 25%;
+}
+
+#flex-container-cmd {
+    display: flex;
+}
+
+#flex-item-cmd {
+    margin-left: 20px;
+}
+
+#no-starter-color {
+    color: none;
+}
+
+.test-flex-container {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+#test-space-cmd {
+    margin-left: 300px;
+}
+
+#help-flex-container {
+    display: flex;
+    gap: 40px; /* space between the two columns */
+}
+
+#help-flex-item {
+    gap: 80px; /* vertical spacing between rows */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 8px 40px; /* row gap, column gap */
+}
+
+
+.main-color {
+    color: "red";
+}
+
+/*
+    Snow effect css rendering
+*/
+@keyframes fall {
+    0% {
+      transform: translateY(-10vh);
+    }
+    100% {
+      transform: translateY(110vh);
+    }
+  }
+  
+  .animate-fall {
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }

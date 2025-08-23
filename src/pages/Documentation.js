@@ -23,7 +23,7 @@ function Documentation() {
                 </h4>
             </div>
             <div class="command">
-                <h2>show experience</h2>
+                <h2>show experiences</h2>
                 <h4>
                     Displays an ordered list of boxes with a description of
                     an experience and an appropriate logo.

@@ -1,4 +1,3 @@
-
 const PATTERN_SIZE = 35;
 
 function output01() {

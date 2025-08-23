@@ -1,12 +1,11 @@
-import { useState } from "react";
 import emailjs from "emailjs-com";
 import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../constants";
 
 function Send() {
 
-    const name = String(document.getElementById("input-name-contact").value);
-    const email = String(document.getElementById("input-email-contact").value);
-    const message = String(document.getElementById("message-item").value);
+    const name = String(document.getElementById("input-name-box").value);
+    const email = String(document.getElementById("input-email-box").value);
+    const message = String(document.getElementById("input-message-box").value);
 
     var templateParams = {
         name: name,
