@@ -16,6 +16,8 @@ import BottomNavbar from "./BottomNavbar.js";
 import mii_logo from "./../assets/images/mii_photo.png";
 import ness_photo from "./../assets/images/ness_photo.png";
 
+const MALLOW_SRC = "https://media.tenor.com/9EWlRwyQ-2wAAAAj/super-mario-super-mario-rpg.gif";
+
 function Home() {
     return <>
         <div id="home-form">
@@ -27,7 +29,7 @@ function Home() {
                     About Me
                 </h1>
                 <div class="space-left" id="profile-frame">
-                    <img id="profile-picture" src={ness_photo} />
+                    <img id="profile-picture" src={MALLOW_SRC} />
                 </div>
                 <h3 class="space-left" id="profile-text">
                     My name is Leonardo de Farias and I am a Computer Science major

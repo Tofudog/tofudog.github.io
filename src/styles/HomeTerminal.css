@@ -165,3 +165,18 @@
 .main-color {
     color: "red";
 }
+
+#command-project-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 330px;
+    padding: 5px;
+    /* padding-top: 15px; */
+    background-color: #04191C;
+    color: #4CBC0F;
+    border: 2px solid #4CBC0F;
+    text-align: center;
+}

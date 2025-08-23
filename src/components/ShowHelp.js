@@ -45,12 +45,6 @@ function ShowHelp() {
                 <p>Clears everything on this terminal</p>
             </div>
 
-            <div>
-                <p><u>quit</u>:</p>
-            </div>
-            <div>
-                <p>Exits this page and goes back to normal website</p>
-            </div>
         </div>
     </>
 }
