@@ -1,17 +1,10 @@
-import { useState } from "react";
-
 import "./../styles/globals.css";
 import "./../styles/Home.css";
 import NavBar from "./NavBar.js";
-import AboutMe from "./AboutMe.js";
-import CommandLine from "./CommandLine.js";
-import ContactMe from "./ContactMe.js";
-import Socials from "./Socials.js";
 import MyExperiences from "./MyExperiences.js";
 import MyProjects from "./MyProjects.js";
 import MySkills from "./MySkills.js";
 import MyContactMe from "./MyContactMe.js";
-import BottomNavbar from "./BottomNavbar.js";
 
 const MALLOW_SRC = "https://media.tenor.com/9EWlRwyQ-2wAAAAj/super-mario-super-mario-rpg.gif";
 
@@ -21,38 +14,61 @@ function Home() {
             <div>
                 <NavBar></NavBar>
             </div>
-            <div id="about-me" class="space-top">
-                <h1 class="space-left">
-                    About Me
-                </h1>
-                <div class="space-left" id="profile-frame">
-                    <img id="profile-picture" src={MALLOW_SRC} />
+            <div class="space-top" id="about-me">
+                <div class="flex-container-center">
+                    <h1>
+                        About Me
+                    </h1>
                 </div>
-                <h3 class="space-left" id="profile-text">
-                    My name is Leonardo de Farias and I am a Computer Science major
-                    at Emory University. I like to build projects and learn new things.
-                </h3>
-                <br></br><br></br><br></br><br></br>
-                <div class="space-left" id="my-experiences">
-                    <MyExperiences></MyExperiences>
+                <div class="flex-container-center">
+                    <div id="profile-frame">
+                        <img id="profile-picture" src={MALLOW_SRC} />
+                    </div>
                 </div>
-                <br></br><br></br><br></br><br></br>
-                <div class="space-left" id="my-projects">
-                    <MyProjects></MyProjects>
+                <div class="flex-container-center">
+                    <h3 id="profile-text">
+                        My name is Leonardo de Farias and I am a Computer Science major
+                        at Emory University. I like to build projects and learn new things.
+                    </h3>
                 </div>
                 <br></br><br></br><br></br><br></br>
-                <div class="space-left" id="my-skills">
-                    <MySkills></MySkills>
+                <div class="flex-container-center">
+                    <h1>Experiences</h1>
+                </div>
+                <div class="flex-container-center">
+                    <div id="my-experiences">
+                        <MyExperiences></MyExperiences>
+                    </div>
+                </div>
+                <br></br><br></br><br></br><br></br>
+                <div class="flex-container-center">
+                    <h1>Projects</h1>
+                </div>
+                <div class="flex-container-center">
+                    <div id="my-projects">
+                        <MyProjects></MyProjects>
+                    </div>
+                </div>
+                <br></br><br></br><br></br><br></br>
+                <div class="flex-container-center">
+                    <h1>Skills</h1>
+                </div>
+                <div class="flex-container-center">
+                    <div id="my-skills">
+                        <MySkills></MySkills>
+                    </div>
                 </div>
                 <br></br><br></br><br></br><br></br>
             </div>
-            <div class="space-left" id="contact-part">
-                <div class="space-left">
+            <div id="contact-part">
+                <div class="flex-container-center">
+                    <h1>Contact Me</h1>
+                </div>
+                <div class="flex-container-center">
                     <MyContactMe></MyContactMe>
                 </div>
                 <br></br><br></br><br></br>
             </div>
-
         </div>
     </>
 }

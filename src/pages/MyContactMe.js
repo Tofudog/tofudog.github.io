@@ -16,7 +16,6 @@ function MyContactMe() {
     };
     return <>
         <div>
-            <h1>Contact Me</h1>
             <form>
                 <div id="flex-container">
                     <input type="text" id="input-name-box" name="input-name-box" placeholder={inputName} onChange={handleNameChange}></input>
