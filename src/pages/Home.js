@@ -13,9 +13,6 @@ import MySkills from "./MySkills.js";
 import MyContactMe from "./MyContactMe.js";
 import BottomNavbar from "./BottomNavbar.js";
 
-import mii_logo from "./../assets/images/mii_photo.png";
-import ness_photo from "./../assets/images/ness_photo.png";
-
 const MALLOW_SRC = "https://media.tenor.com/9EWlRwyQ-2wAAAAj/super-mario-super-mario-rpg.gif";
 
 function Home() {
