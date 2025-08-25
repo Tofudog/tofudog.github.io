@@ -50,7 +50,6 @@ function MySkills() {
     });
     return <>
         <div>
-            <h1>Skills</h1>
             {componentList.map((item, index) => (
                 <React.Fragment key={index}>
                     <div>{item}</div>

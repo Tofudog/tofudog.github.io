@@ -17,6 +17,11 @@ a:hover {
     color: rgb(163, 2, 2);
 }
 
+.flex-container-center {
+    display: flex;
+    justify-content: center;
+}
+
 .space-top {
     padding-top: 45px;
 }
@@ -27,7 +32,7 @@ a:hover {
 
 .flex-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 3vw;
@@ -139,8 +144,9 @@ a:hover {
 }
 
 #profile-text {
-    width: 350px;
+    width: 450px;
     line-height: 25px;
+    text-align: center;
 }
 
 #special-space {
@@ -162,7 +168,7 @@ a:hover {
 
 #input-name-box {
     /* width: 350px; */
-    width: 32vw;
+    width: 35vw;
     height: 44px;
     background-color: #B9AEAE;
     border-width: 3px;
@@ -175,7 +181,7 @@ a:hover {
 #input-email-box {
     /* width: 350px; */
     margin-left: 5vw;
-    width: 32vw;
+    width: 35vw;
     height: 44px;
     background-color: #B9AEAE;
     border-width: 3px;
@@ -190,7 +196,7 @@ a:hover {
 
 #input-message-box {
     /* width: 757px; */
-    width: 69vw;
+    width: 75vw;
     height: 74px;
     background-color: #B9AEAE;
     border-width: 3px;
@@ -202,7 +208,7 @@ a:hover {
 
 #send-message-button {
     /* width: 765px; */
-    width: 69vw;
+    width: 75vw;
     height: 40px;
     background-color: #B9AEAE;
     border-width: 3px;

@@ -1,5 +1,3 @@
-import {Link} from 'react-router-dom'
-import React from 'react';
 import { useState } from 'react';
 import ReactDOM from "react-dom/client";
 import { COMMAND_MAP } from '../constants.js';
@@ -9,7 +7,6 @@ import "./../styles/HomeTerminal.css";
 
 function CommandLine() {
     const [inputValue, setInputValue] = useState('');
-    //const [root, setRoot] = useState(null);
 
     const handleChange = (event) => {
         setInputValue(event.target.value);

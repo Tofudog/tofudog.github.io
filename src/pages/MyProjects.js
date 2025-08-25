@@ -28,7 +28,6 @@ function MyProjects() {
     }
     return <>
         <div>
-            <h1>Projects</h1>
             <div class="flex-container">
                 {componentList.map((item, index) => (
                     <React.Fragment id="flex-item" key={index}>
