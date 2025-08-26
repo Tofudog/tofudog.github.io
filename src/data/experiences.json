@@ -4,9 +4,9 @@
             "company": "Amazon",
             "location": "Seattle, WA",
             "position": "SDE Intern",
-            "description": "We'll see shortly...",
+            "description": "Added features enabling data ingestion/config to an index",
             "dates": ["May 2025", "August 2025"],
-            "tech": [],
+            "tech": ["AWS", "Python", "React TS", "Git/Github", "LLMs"],
             "logo": "https://static.vecteezy.com/system/resources/thumbnails/019/766/240/small/amazon-logo-amazon-icon-transparent-free-png.png"
         },
         {
