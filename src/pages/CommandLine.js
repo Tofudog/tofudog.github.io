@@ -19,15 +19,10 @@ function CommandLine() {
     };
   
     const handleFormSubmit = (value) => {
-        //check if input command is valid
-        var newValue = value;
-        if (value === undefined) {
-            newValue = "";
-        }
+        var newValue = (value === undefined) ? "" : value;
         if (COMMAND_MAP.has(newValue)) {
-            const targetDiv = document.getElementById("command-line-output");
+            const targetDiv = document.getElementById("rendered-output");
             if (targetDiv) {
-                //setRoot(ReactDOM.createRoot(targetDiv));
                 const root = ReactDOM.createRoot(targetDiv);
                 const cmdComponent = COMMAND_MAP.get(newValue);
                 root.render(cmdComponent);
