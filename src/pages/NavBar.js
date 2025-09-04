@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import terminal_logo from "./../assets/images/terminal_logo.png"
+import React, { useState, useEffect, useRef } from 'react';
+import terminal_logo from "./../assets/images/terminal_logo.png";
+import navbar_dropdown_logo from "./../assets/images/navbar_dropdown.png";
 
 import ChangingTextColor from "../components/ColorPallete";
 import { Link } from 'react-router-dom';
@@ -60,22 +61,36 @@ function ClickedMe(navShows, setNavShows) {
 }
 
 function NavBarList() {
-    const [navShows, setNavShows] = useState(false); //determine whether navlist is being rendered
-    return <>
-            <div class="flex-container-backwards">
-                <div class="flex-item-navs">
-                    <button onClick={() => ClickedMe(navShows, setNavShows)}>
-                        <img id="navbar-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNGLGilxB_EygnmkdbDYDcJNFVdbKtzh0tQ&s"></img>
-                    </button>
-                    {navShows && <NavListComponent></NavListComponent>}
-                </div>
-                <div class="flex-item-navs">
-                    <Link to="/command-line" target="_blank" rel="noopener noreferrer">
-                        <img id="top-part-image" src={terminal_logo} />
-                    </Link>
-                </div>
+    const [navShows, setNavShows] = useState(false);
+    const navRef = useRef(null);
+
+    useEffect(() => {
+        const handleClick = (e) => {
+            if (navRef.current && !navRef.current.contains(e.target)) {
+                setNavShows(false);
+            }
+        };
+        document.addEventListener("click", handleClick);
+        return () => {
+            document.removeEventListener("click", handleClick);
+        };
+    }, []);
+
+    return (
+        <div ref={navRef} className="flex-container-backwards">
+            <div className="flex-item-nav">
+                <button id="navbar-dropdown-button" onClick={() => ClickedMe(navShows, setNavShows)}>
+                    <img id="navbar-image" src={navbar_dropdown_logo} alt="nav"/>
+                </button>
+                {navShows && <NavListComponent />}
+            </div>
+            <div className="flex-item-navs">
+                <Link to="/command-line" target="_blank" rel="noopener noreferrer">
+                    <img id="top-part-image" src={terminal_logo} alt="terminal" />
+                </Link>
+            </div>
         </div>
-    </>
+    );
 }
 
 function NavBar() {
@@ -94,6 +109,7 @@ function NavBar() {
         window.removeEventListener('resize', handleResize);
       };
     }, []);
+
     return <>
         <div id="top-part" class="flex-container">
             <div class="flex-item">

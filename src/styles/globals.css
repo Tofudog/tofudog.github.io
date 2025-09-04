@@ -226,6 +226,19 @@ a:hover {
     width: 35px;
 }
 
+#navbar-dropdown-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#navbar-dropdown-button img {
+  display: block;
+  width: 52%;
+}
+
 #flex-container-contact {
     display: flex;
     /* width: 5vw; */
