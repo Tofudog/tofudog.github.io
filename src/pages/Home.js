@@ -14,6 +14,7 @@ function Home() {
             <div>
                 <NavBar></NavBar>
             </div>
+            <div id="about-me-scroll-view"></div>
             <div class="space-top" id="about-me">
                 <div class="flex-container-center">
                     <h1>
@@ -31,7 +32,7 @@ function Home() {
                         at Emory University. I like to build projects and learn new things.
                     </h3>
                 </div>
-                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><div id="my-experiences-scroll-view"></div><br></br><br></br>
                 <div class="flex-container-center">
                     <h1>Experiences</h1>
                 </div>
@@ -40,7 +41,7 @@ function Home() {
                         <MyExperiences></MyExperiences>
                     </div>
                 </div>
-                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><div id="my-projects-scroll-view"></div><br></br><br></br>
                 <div class="flex-container-center">
                     <h1>Projects</h1>
                 </div>
@@ -49,7 +50,7 @@ function Home() {
                         <MyProjects></MyProjects>
                     </div>
                 </div>
-                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><div id="my-skills-scroll-view"></div><br></br><br></br>
                 <div class="flex-container-center">
                     <h1>Skills</h1>
                 </div>
@@ -58,7 +59,7 @@ function Home() {
                         <MySkills></MySkills>
                     </div>
                 </div>
-                <br></br><br></br><br></br><br></br>
+                <br></br><br></br><div id="contact-part-scroll-view"></div><br></br><br></br>
             </div>
             <div id="contact-part">
                 <div class="flex-container-center">

@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 */
 
 const scrollToSection = (id) => {
-    const element = document.getElementById(id);
+    const element = document.getElementById(`${id}-scroll-view`);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' }); // Optional smooth scrolling
     }
