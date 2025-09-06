@@ -123,6 +123,11 @@ a:hover {
     display: block;
 }
 
+.navbar-title-section:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
 #top-part {
     position: fixed;
     background-color: #1f1d1d;
