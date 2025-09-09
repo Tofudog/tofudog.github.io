@@ -14,7 +14,7 @@ function ProjectComponent(project) {
                         &nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                 }
-                <a target="_blank" href={project.src}>code</a>
+                <a target="_blank" href={project.src}><h4>code</h4></a>
             </div>
         </div>
     </>

@@ -18,3 +18,15 @@
 #home-form p {
     color: #E9E9E9;
 }
+
+#home-form h4 {
+    color: #E9E9E9;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+}
+
+#home-form h4:hover {
+    color: rgb(218, 185, 143);
+    text-decoration: underline;
+    text-decoration-color: rgb(218, 185, 143);
+}
