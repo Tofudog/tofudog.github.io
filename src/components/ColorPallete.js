@@ -59,7 +59,7 @@ function isSmallerColor(color, otherColor) {
 }
 
 function ChangingTextColor(props) {
-    const [textColor, setTextColor] = useState("rgb(0, 255, 60)");
+    const [textColor, setTextColor] = useState("rgba(211, 243, 218, 1)");
     const [decreasing, setDecreasing] = useState(true);
 
     useEffect(() => {

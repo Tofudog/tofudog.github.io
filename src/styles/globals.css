@@ -38,6 +38,14 @@ a:hover {
     gap: 3vw;
 }
 
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7vw;
+    padding-left: 40px;
+    padding-right: 15px;
+}
+
 .flex-container-backwards {
     display: flex;
     justify-content: flex-end;
@@ -78,6 +86,7 @@ a:hover {
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 25px;
 }
 
 .standout-box:hover {

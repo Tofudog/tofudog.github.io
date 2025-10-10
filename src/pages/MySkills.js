@@ -20,7 +20,7 @@ function SkillComponent(curSkills) {
         }
         else {
             curList.push(
-                <div class="flex-item">
+                <div class="fdlex-item">
                     <div>
                         <img class="skill-image" src={url} />
                         <h3 class="middle-text">{name}</h3>
@@ -30,7 +30,7 @@ function SkillComponent(curSkills) {
         }
     }
     return <>
-        <div class="flex-container">
+        <div class="grid-container">
             {curList.map((item, index) => (
                 <React.Fragment key={index}>
                     <div>{item}</div>
