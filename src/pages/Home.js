@@ -23,7 +23,7 @@ function Home() {
             <div id="about-me-scroll-view"></div>
             <div class="space-top" id="about-me">
                 <div class="flex-container-center">
-                    <ChangingTextColor component="h1" text="About Me"></ChangingTextColor>
+                    <h1>About Me</h1>
                 </div>
                 <div class="flex-container-center">
                     <div id="profile-frame">
@@ -38,7 +38,7 @@ function Home() {
                 </div>
                 <br></br><br></br><div id="my-experiences-scroll-view"></div><br></br><br></br>
                 <div class="flex-container-center">
-                    <ChangingTextColor component="h1" text="Experiences"></ChangingTextColor>
+                    <h1>Experiences</h1>
                 </div>
                 <div class="flex-container-center">
                     <div id="my-experiences">
@@ -47,7 +47,7 @@ function Home() {
                 </div>
                 <br></br><br></br><div id="my-projects-scroll-view"></div><br></br><br></br>
                 <div class="flex-container-center">
-                    <ChangingTextColor component="h1" text="Projects"></ChangingTextColor>
+                    <h1>Projects</h1>
                 </div>
                 <div class="flex-container-center">
                     <div id="my-projects">
@@ -56,7 +56,7 @@ function Home() {
                 </div>
                 <br></br><br></br><div id="my-skills-scroll-view"></div><br></br><br></br>
                 <div class="flex-container-center">
-                    <ChangingTextColor component="h1" text="Skills"></ChangingTextColor>
+                    <h1>Skills</h1>
                 </div>
                 <div class="flex-container-center">
                     <div id="my-skills">
@@ -67,7 +67,7 @@ function Home() {
             </div>
             <div id="contact-part">
                 <div class="flex-container-center">
-                    <ChangingTextColor component="h1" text="Contact Me"></ChangingTextColor>
+                    <h1>Contact Me</h1>
                 </div>
                 <div class="flex-container-center">
                     <MyContactMe></MyContactMe>

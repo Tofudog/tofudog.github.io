@@ -1,5 +1,5 @@
 #home-form {
-    background-image: linear-gradient(140deg, rgb(6, 6, 6), rgb(28, 31, 34), rgb(9, 12, 26), rgb(17, 48, 81));
+    background: url(../../background.png) repeat center center fixed;
 }
 
 #home-form body {
