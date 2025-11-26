@@ -4,7 +4,7 @@ function downloadPDF() {
     const fileURL = process.env.PUBLIC_URL + RESUME;
     const link = document.createElement("a");
     link.href = fileURL;
-    link.download = "resume.pdf";
+    link.download = "leonardo_defarias_resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
