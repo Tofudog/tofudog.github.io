@@ -1,5 +1,6 @@
 #home-form {
-    background: url(../../background.png) repeat center center fixed;
+    background: url(../../background.png) center center no-repeat;
+    background-size: cover;
 }
 
 #home-form body {
