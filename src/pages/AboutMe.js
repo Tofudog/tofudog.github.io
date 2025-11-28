@@ -1,7 +1,3 @@
-import NavBar from "./NavBar.js";
-import ContactMe from "./ContactMe.js";
-import ChangingTextColor from "../components/ColorPallete.js";
-
 function AboutMe() {
     return <>
         <div>

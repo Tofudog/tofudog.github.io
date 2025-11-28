@@ -3,7 +3,6 @@
         {
             "src": "https://github.com/Tofudog/Yeetcode",
             "url": "https://chromewebstore.google.com/detail/yeetcode/jfdjendlhcodpecohebkckfmdcofdlao",
-            "image": "../assets/images/github_logo.jpeg",
             "numStars": 4,
             "title": "Yeetcode",
             "description": "Chrome extension where Leetcode users battle against each other!"
@@ -11,7 +10,6 @@
         {
             "src": "https://github.com/Tofudog/personal_website",
             "url": "https://tofudog.github.io/",
-            "image": "../assets/images/github_logo.jpeg",
             "numStars": 1,
             "title": "This website",
             "description": "Beeeeep! I'm not sure a description is necessary..."
@@ -19,7 +17,6 @@
         {
             "src": "https://github.com/Tofudog/C-3BO_2",
             "url": null,
-            "image": "https://github.com/Tofudog/C-3BO_2/blob/master/WEBAPP/static/images/c3bo_temp_logo.jpg",
             "numStars": 1,
             "title": "C3BO",
             "description": "High school project website that can detect Leukemia at high accuracy"

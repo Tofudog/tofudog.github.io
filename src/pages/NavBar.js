@@ -2,20 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import terminal_logo from "./../assets/images/terminal_logo.png";
 import navbar_dropdown_logo from "./../assets/images/navbar_dropdown.png";
 
-import ChangingTextColor from "../components/ColorPallete";
 import { Link } from 'react-router-dom';
-
-/*
-{ <ChangingTextColor component="h5" text="ldefari@Leonardos-Laptop personal_website % npm start this stupid website"></ChangingTextColor>
-                <ChangingTextColor component="h5" text="ldefari@Leonardos-Laptop personal_website % alright npm deploy i guess :("></ChangingTextColor> }
-*/
 
 const scrollToSection = (id) => {
     const element = document.getElementById(`${id}-scroll-view`);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' }); // Optional smooth scrolling
     }
-  };
+};
 
 function NavBarNames() {
     return <>
