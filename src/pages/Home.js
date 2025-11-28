@@ -6,12 +6,6 @@ import MyProjects from "./MyProjects.js";
 import MySkills from "./MySkills.js";
 import MyContactMe from "./MyContactMe.js";
 
-import ChangingTextColor from "../components/ColorPallete";
-/*
-{ <ChangingTextColor component="h5" text="ldefari@Leonardos-Laptop personal_website % npm start this stupid website"></ChangingTextColor>
-                <ChangingTextColor component="h5" text="ldefari@Leonardos-Laptop personal_website % alright npm deploy i guess :("></ChangingTextColor> }
-*/
-
 const MALLOW_SRC = "https://media.tenor.com/9EWlRwyQ-2wAAAAj/super-mario-super-mario-rpg.gif";
 
 function Home() {
