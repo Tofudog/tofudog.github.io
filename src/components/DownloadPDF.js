@@ -1,4 +1,3 @@
-import React from "react";
 import downloadPDF from "../scripts/downloadPDF";
 
 function DownloadPDF() {

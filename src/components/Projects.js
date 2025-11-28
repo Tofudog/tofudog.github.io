@@ -1,5 +1,4 @@
 import "../styles/Project.css";
-
 import jsonData from '../data/projects.json';
 
 function ProjectOutline(title, description, stars) {
@@ -32,16 +31,4 @@ function ProjectComponent() {
       );
 }
 
-function ClearScreenComponent() {
-    return <></>
-}
-
-function TestComponent() {
-    return <>
-        <h2>
-            I cleared the screen!
-        </h2>
-    </>
-}
-
-export {TestComponent, ProjectComponent, ClearScreenComponent};
+export default {ProjectComponent}
