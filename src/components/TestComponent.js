@@ -1,5 +1,4 @@
 import "../styles/Project.css";
-import github_logo from "../assets/images/github_logo.jpeg";
 
 import jsonData from '../data/projects.json';
 
