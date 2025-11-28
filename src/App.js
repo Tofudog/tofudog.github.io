@@ -2,7 +2,6 @@ import Home from "./pages/Home.js";
 import CommandLine from "./pages/CommandLine.js";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-
 function App() {
   return (
     <>

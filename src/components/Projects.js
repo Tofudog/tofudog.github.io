@@ -31,4 +31,4 @@ function ProjectComponent() {
       );
 }
 
-export default {ProjectComponent}
+export default ProjectComponent

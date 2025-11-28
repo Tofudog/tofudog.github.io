@@ -5,4 +5,4 @@ function ClearScreenComponent() {
     return <></>
 }
 
-export default {ClearScreenComponent};
+export default ClearScreenComponent;
